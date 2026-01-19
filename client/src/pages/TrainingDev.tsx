@@ -2,8 +2,25 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { motion } from "framer-motion";
 import trainingImg from "@assets/generated_images/professional_teacher_training_session.png";
+import thesisImg from "@assets/generated_images/thesis_and_academic_research_concept.png";
+import roadmapImg from "@assets/generated_images/teachers_roadmap_for_excellence_and_professional_growth.png";
 
 export default function TrainingDev() {
+  const items = [
+    {
+      title: "من النص إلى الأطروحة",
+      image: thesisImg,
+      description: "مسار تطويري يركز على مهارات البحث العلمي والتحليل النقدي، وينقل المتدرب من مرحلة فهم النصوص إلى مرحلة إنتاج المعرفة وصياغة الأطروحات العلمية الرصينة.",
+      features: ["منهجيات البحث العلمي", "التحليل النقدي للنصوص", "مهارات الكتابة الأكاديمية"]
+    },
+    {
+      title: "خارطة التميز للمعلم (Teacher Excellence Roadmap)",
+      image: roadmapImg,
+      description: "برنامج شامل يهدف إلى تزويد المعلمين بأحدث الاستراتيجيات التعليمية وأساليب الإدارة الصفية الفعالة لضمان تقديم تجربة تعليمية ملهمة ومؤثرة.",
+      features: ["استراتيجيات التعلم النشط", "الإدارة الصفية الذكية", "تفعيل التقنية في التعليم", "مراعاة الفروق الفردية"]
+    }
+  ];
+
   return (
     <div className="min-h-screen flex flex-col bg-background">
       <Navbar />
@@ -20,44 +37,38 @@ export default function TrainingDev() {
       </div>
 
       <main className="container px-4 py-12 flex-1">
-        <motion.div 
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="prose prose-lg max-w-none prose-headings:text-primary"
-        >
-          <div className="grid md:grid-cols-2 gap-12">
-            <div className="space-y-6">
-              <div className="bg-card p-6 rounded-xl shadow-sm border">
-                <h2 className="text-2xl font-bold text-primary mb-4">خارطة التميز للمعلم</h2>
-                <p className="text-muted-foreground leading-relaxed">
-                  برنامج شامل يهدف إلى تزويد المعلمين بأحدث الاستراتيجيات التعليمية وأساليب الإدارة الصفية الفعالة. 
-                  يركز البرنامج على تطوير المهارات الشخصية والمهنية للمعلم لضمان تقديم تجربة تعليمية ملهمة ومؤثرة.
-                </p>
-                <ul className="list-disc list-inside mt-4 space-y-2 text-muted-foreground">
-                  <li>استراتيجيات التعلم النشط</li>
-                  <li>الإدارة الصفية الذكية</li>
-                  <li>تفعيل التقنية في التعليم</li>
-                  <li>مراعاة الفروق الفردية</li>
-                </ul>
+        <div className="space-y-16">
+          {items.map((item, index) => (
+            <motion.div 
+              key={index}
+              initial={{ opacity: 0, x: index % 2 === 0 ? 50 : -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              className={`flex flex-col ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} gap-8 items-center bg-card p-6 rounded-2xl border shadow-sm`}
+            >
+              <div className="w-full md:w-1/2 aspect-video rounded-xl overflow-hidden">
+                <img src={item.image} alt={item.title} className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
               </div>
-            </div>
-
-            <div className="space-y-6">
-              <div className="bg-card p-6 rounded-xl shadow-sm border">
-                <h2 className="text-2xl font-bold text-primary mb-4">من النص إلى الأطروحة</h2>
-                <p className="text-muted-foreground leading-relaxed">
-                  مسار تطويري يركز على مهارات البحث العلمي والتحليل النقدي، وينقل المتدرب من مرحلة فهم النصوص 
-                  إلى مرحلة إنتاج المعرفة وصياغة الأطروحات العلمية الرصينة.
+              <div className="w-full md:w-1/2 space-y-4">
+                <h2 className="text-3xl font-bold text-primary">{item.title}</h2>
+                <p className="text-muted-foreground leading-relaxed text-lg">
+                  {item.description}
                 </p>
-                <ul className="list-disc list-inside mt-4 space-y-2 text-muted-foreground">
-                  <li>منهجيات البحث العلمي</li>
-                  <li>التحليل النقدي للنصوص</li>
-                  <li>مهارات الكتابة الأكاديمية</li>
-                </ul>
+                <div className="pt-4">
+                  <h4 className="font-bold text-foreground mb-2">أبرز المحاور:</h4>
+                  <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                    {item.features.map((f, i) => (
+                      <li key={i} className="flex items-center gap-2 text-muted-foreground">
+                        <span className="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                        {f}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </div>
-            </div>
-          </div>
-        </motion.div>
+            </motion.div>
+          ))}
+        </div>
       </main>
 
       <Footer />

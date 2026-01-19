@@ -1,6 +1,7 @@
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
-import arabicImg from "@assets/generated_images/arabic_calligraphy_art.png";
+import arabicHero from "@assets/generated_images/arabic_calligraphy_art.png";
+import arabicBookImg from "@assets/generated_images/arabic_language_educational_book_cover_art.png";
 
 export default function ArabicProgram() {
   return (
@@ -9,7 +10,7 @@ export default function ArabicProgram() {
       
       <div className="relative h-[400px] overflow-hidden">
         <img 
-          src={arabicImg} 
+          src={arabicHero} 
           alt="برنامج اللغة العربية" 
           className="w-full h-full object-cover"
         />
@@ -22,14 +23,26 @@ export default function ArabicProgram() {
       </div>
 
       <main className="container px-4 py-16 flex-1">
-        <div className="max-w-4xl mx-auto space-y-12">
+        <div className="max-w-5xl mx-auto space-y-16">
           
-          <div className="prose prose-lg prose-headings:text-primary max-w-none">
-            <h2 className="text-3xl font-bold mb-6 border-r-4 border-secondary pr-4">رؤية البرنامج</h2>
-            <p className="text-lg leading-relaxed text-muted-foreground">
-              نسعى لتمكين الطلاب من أدوات اللغة العربية بأسلوب عصري يجمع بين الأصالة والمعاصرة، 
-              لضمان التحدث بطلاقة والكتابة الصحيحة وفهم جماليات لغة الضاد.
-            </p>
+          <div className="flex flex-col md:flex-row gap-12 items-center">
+            <div className="md:w-1/2 space-y-6">
+              <h2 className="text-3xl font-bold text-primary border-r-4 border-secondary pr-4">الهدى والنور أساس إتقان العربية</h2>
+              <p className="text-lg leading-relaxed text-muted-foreground">
+                منهج تعليمي متخصص صمم ليكون المرجع الأول في تأسيس اللغة العربية للأجيال، يجمع بين القواعد الأساسية والجماليات اللغوية لضمان إتقان القراءة والكتابة بأسلوب مبسط وشيق.
+              </p>
+              <div className="bg-muted/30 p-6 rounded-xl border">
+                <h4 className="font-bold mb-2">أهداف البرنامج:</h4>
+                <ul className="space-y-2 text-muted-foreground">
+                  <li>• التأسيس الصحيح لمخارج الحروف</li>
+                  <li>• إتقان مهارات الإملاء والكتابة</li>
+                  <li>• تنمية الذوق اللغوي لدى الطالب</li>
+                </ul>
+              </div>
+            </div>
+            <div className="md:w-1/2 rounded-2xl overflow-hidden shadow-2xl">
+              <img src={arabicBookImg} alt="الهدى والنور أساس إتقان العربية" className="w-full h-auto" />
+            </div>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
@@ -69,15 +82,6 @@ export default function ArabicProgram() {
               </ul>
             </div>
           </div>
-
-          <div className="bg-muted/30 p-8 rounded-2xl">
-            <h2 className="text-2xl font-bold text-primary mb-4">منهجية التعليم</h2>
-            <p className="text-muted-foreground leading-relaxed">
-              نعتمد على التدرج في تعليم المهارات اللغوية الأربعة: الاستماع، التحدث، القراءة، والكتابة. 
-              يتم دمج النصوص الأدبية والقرآنية لتعزيز الملكة اللغوية لدى الطالب.
-            </p>
-          </div>
-
         </div>
       </main>
 
