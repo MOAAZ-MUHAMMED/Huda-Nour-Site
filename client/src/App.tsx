@@ -11,20 +11,24 @@ import Celebrations from "@/pages/Celebrations";
 import Programs from "@/pages/Programs";
 import ArabicProgram from "@/pages/ArabicProgram";
 import QuranProgram from "@/pages/QuranProgram";
+import { ScrollToTop } from "@/components/ScrollToTop";
 
 function Router() {
   return (
-    <Switch>
-      <Route path="/" component={Home} />
-      <Route path="/training-dev" component={TrainingDev} />
-      <Route path="/workshops" component={Workshops} />
-      <Route path="/tests" component={Tests} />
-      <Route path="/celebrations" component={Celebrations} />
-      <Route path="/programs" component={Programs} />
-      <Route path="/programs/arabic" component={ArabicProgram} />
-      <Route path="/programs/quran" component={QuranProgram} />
-      <Route component={NotFound} />
-    </Switch>
+    <>
+      <ScrollToTop />
+      <Switch>
+        <Route path="/" component={Home} />
+        <Route path="/training-dev" component={TrainingDev} />
+        <Route path="/workshops" component={Workshops} />
+        <Route path="/tests" component={Tests} />
+        <Route path="/celebrations" component={Celebrations} />
+        <Route path="/programs" component={Programs} />
+        <Route path="/programs/arabic" component={ArabicProgram} />
+        <Route path="/programs/quran" component={QuranProgram} />
+        <Route component={NotFound} />
+      </Switch>
+    </>
   );
 }
 
