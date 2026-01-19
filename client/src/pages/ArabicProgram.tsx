@@ -2,11 +2,13 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import arabicHero from "@assets/generated_images/arabic_calligraphy_art.png";
 import arabicBookImg from "@assets/generated_images/arabic_language_educational_book_cover_art.png";
+import { WhatsAppButton } from "@/components/WhatsAppButton";
 
 export default function ArabicProgram() {
   return (
     <div className="min-h-screen flex flex-col bg-background">
       <Navbar />
+      <WhatsAppButton />
       
       <div className="relative h-[400px] overflow-hidden">
         <img 
@@ -85,6 +87,7 @@ export default function ArabicProgram() {
         </div>
       </main>
 
+      <WhatsAppButton />
       <Footer />
     </div>
   );

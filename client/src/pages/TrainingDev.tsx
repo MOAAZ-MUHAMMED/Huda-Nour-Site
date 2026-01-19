@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import trainingImg from "@assets/generated_images/professional_teacher_training_session.png";
 import thesisImg from "@assets/generated_images/thesis_and_academic_research_concept.png";
 import roadmapImg from "@assets/generated_images/teachers_roadmap_for_excellence_and_professional_growth.png";
+import { WhatsAppButton } from "@/components/WhatsAppButton";
 
 export default function TrainingDev() {
   const items = [
@@ -24,6 +25,7 @@ export default function TrainingDev() {
   return (
     <div className="min-h-screen flex flex-col bg-background">
       <Navbar />
+      <WhatsAppButton />
       
       <div className="relative h-[300px] overflow-hidden">
         <img 
@@ -71,6 +73,7 @@ export default function TrainingDev() {
         </div>
       </main>
 
+      <WhatsAppButton />
       <Footer />
     </div>
   );

@@ -1,11 +1,13 @@
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import celebrationsImg from "@assets/generated_images/graduation_celebration_or_award_ceremony.png";
+import { WhatsAppButton } from "@/components/WhatsAppButton";
 
 export default function Celebrations() {
   return (
     <div className="min-h-screen flex flex-col bg-background">
       <Navbar />
+      <WhatsAppButton />
       
       <div className="relative h-[300px] overflow-hidden">
         <img 
@@ -40,6 +42,7 @@ export default function Celebrations() {
         </div>
       </main>
 
+      <WhatsAppButton />
       <Footer />
     </div>
   );

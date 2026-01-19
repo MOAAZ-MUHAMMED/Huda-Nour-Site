@@ -3,6 +3,7 @@ import { Footer } from "@/components/Footer";
 import { motion } from "framer-motion";
 import workshopsImg from "@assets/generated_images/interactive_educational_workshop.png";
 import mathImg from "@assets/generated_images/interactive_online_math_session_for_children.png";
+import { WhatsAppButton } from "@/components/WhatsAppButton";
 
 export default function Workshops() {
   const workshops = [
@@ -17,6 +18,7 @@ export default function Workshops() {
   return (
     <div className="min-h-screen flex flex-col bg-background">
       <Navbar />
+      <WhatsAppButton />
       
       <div className="relative h-[300px] overflow-hidden">
         <img 
@@ -67,6 +69,7 @@ export default function Workshops() {
         </div>
       </main>
 
+      <WhatsAppButton />
       <Footer />
     </div>
   );

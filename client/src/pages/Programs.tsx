@@ -6,11 +6,13 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowLeft } from "lucide-react";
 import arabicImg from "@assets/generated_images/arabic_calligraphy_art.png";
 import quranImg from "@assets/generated_images/quran_on_a_wooden_stand.png";
+import { WhatsAppButton } from "@/components/WhatsAppButton";
 
 export default function Programs() {
   return (
     <div className="min-h-screen flex flex-col bg-background geometric-pattern">
       <Navbar />
+      <WhatsAppButton />
       
       <div className="container px-4 py-20 flex-1 flex flex-col justify-center items-center">
         <div className="text-center mb-16">
@@ -81,6 +83,7 @@ export default function Programs() {
         </div>
       </div>
 
+      <WhatsAppButton />
       <Footer />
     </div>
   );

@@ -1,11 +1,13 @@
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import quranImg from "@assets/generated_images/quran_on_a_wooden_stand.png";
+import { WhatsAppButton } from "@/components/WhatsAppButton";
 
 export default function QuranProgram() {
   return (
     <div className="min-h-screen flex flex-col bg-background">
       <Navbar />
+      <WhatsAppButton />
       
       <div className="relative h-[400px] overflow-hidden">
         <img 
@@ -77,6 +79,7 @@ export default function QuranProgram() {
         </div>
       </main>
 
+      <WhatsAppButton />
       <Footer />
     </div>
   );
