@@ -37,26 +37,26 @@ export function Navbar() {
     <nav className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between px-4 md:px-6">
         <Link href="/">
-          <a className="flex items-center gap-2 font-bold text-xl text-primary">
+          <div className="flex items-center gap-2 font-bold text-xl text-primary cursor-pointer">
             <BookOpen className="h-6 w-6" />
             <span>مؤسسة الهدى والنور</span>
-          </a>
+          </div>
         </Link>
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex gap-6 items-center">
           {links.map((link) => (
             <Link key={link.href} href={link.href}>
-              <a
+              <div
                 className={cn(
-                  "text-sm font-medium transition-colors hover:text-primary",
+                  "text-sm font-medium transition-colors hover:text-primary cursor-pointer",
                   location === link.href
                     ? "text-primary font-bold"
                     : "text-muted-foreground"
                 )}
               >
                 {link.label}
-              </a>
+              </div>
             </Link>
           ))}
           <Button variant="ghost" size="icon" onClick={toggleTheme} className="ml-2">
@@ -81,9 +81,9 @@ export function Navbar() {
           <div className="flex flex-col gap-4">
             {links.map((link) => (
               <Link key={link.href} href={link.href}>
-                <a
+                <div
                   className={cn(
-                    "block text-sm font-medium transition-colors hover:text-primary py-2",
+                    "block text-sm font-medium transition-colors hover:text-primary py-2 cursor-pointer",
                     location === link.href
                       ? "text-primary font-bold"
                       : "text-muted-foreground"
@@ -91,7 +91,7 @@ export function Navbar() {
                   onClick={() => setIsOpen(false)}
                 >
                   {link.label}
-                </a>
+                </div>
               </Link>
             ))}
           </div>
