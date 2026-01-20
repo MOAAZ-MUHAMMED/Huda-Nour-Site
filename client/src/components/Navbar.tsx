@@ -37,9 +37,9 @@ export function Navbar() {
     <nav className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between px-4 md:px-6">
         <Link href="/">
-          <div className="flex items-center gap-2 font-bold text-xl text-primary cursor-pointer">
-            <BookOpen className="h-6 w-6" />
-            <span>مؤسسة الهدى والنور</span>
+          <div className="flex items-center gap-2 font-bold text-xl text-primary cursor-pointer group">
+            <BookOpen className="h-6 w-6 transition-transform group-hover:rotate-12" />
+            <span className="font-arabic text-2xl tracking-wide">مؤسسة الهدى والنور</span>
           </div>
         </Link>
 

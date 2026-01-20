@@ -23,6 +23,7 @@
   --color-ring: hsl(var(--ring));
   --radius: 0.75rem;
   --font-sans: "Cairo", sans-serif;
+  --font-arabic: "Reem Kufi", "Amiri", serif;
 }
 
 :root {
