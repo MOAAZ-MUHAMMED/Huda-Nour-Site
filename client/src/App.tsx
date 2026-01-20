@@ -12,11 +12,13 @@ import Programs from "@/pages/Programs";
 import ArabicProgram from "@/pages/ArabicProgram";
 import QuranProgram from "@/pages/QuranProgram";
 import { ScrollToTop } from "@/components/ScrollToTop";
+import { FloatingHomeButton } from "@/components/FloatingHomeButton";
 
 function Router() {
   return (
     <>
       <ScrollToTop />
+      <FloatingHomeButton />
       <Switch>
         <Route path="/" component={Home} />
         <Route path="/training-dev" component={TrainingDev} />
