@@ -50,7 +50,7 @@ export default function Tests() {
                 "تسليم أوراق الإجابة مع التأكد من الاستلام والتسليم لمعلم المادة المختص."
               ].map((item, i) => (
                 <li key={i} className="flex items-start gap-3 text-foreground/80">
-                  <CheckCircle className="w-5 h-5 text-secondary shrink-0 mt-1" />
+                  <CheckCircle className="w-5 h-5 text-primary shrink-0 mt-1" />
                   <span>{item}</span>
                 </li>
               ))}

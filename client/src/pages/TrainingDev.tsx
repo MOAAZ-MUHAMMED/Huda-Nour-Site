@@ -1,6 +1,7 @@
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { motion } from "framer-motion";
+import { CheckCircle2 } from "lucide-react";
 import trainingImg from "@assets/generated_images/professional_teacher_training_session.png";
 import thesisImg from "@assets/generated_images/thesis_and_academic_research_concept.png";
 import roadmapImg from "@assets/generated_images/teachers_roadmap_for_excellence_and_professional_growth.png";
@@ -61,7 +62,7 @@ export default function TrainingDev() {
                   <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                     {item.features.map((f, i) => (
                       <li key={i} className="flex items-center gap-2 text-muted-foreground">
-                        <span className="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                        <CheckCircle2 className="w-5 h-5 text-primary shrink-0" />
                         {f}
                       </li>
                     ))}
