@@ -4,7 +4,7 @@ import { SectionCard } from "@/components/SectionCard";
 import heroBg from "@assets/generated_images/educational_institution_hero_background_with_subtle_islamic_geometric_patterns.png";
 import trainingImg from "@assets/generated_images/professional_teacher_training_session.png";
 import workshopsImg from "@assets/generated_images/interactive_educational_workshop.png";
-import testsImg from "@assets/generated_images/students_taking_exams_focused_and_calm.png";
+import testsImg from "@assets/generated_images/modern_islamic_geometric_patterns_background.png";
 import celebrationsImg from "@assets/generated_images/graduation_celebration_or_award_ceremony.png";
 import programsImg from "@assets/generated_images/quran_on_a_wooden_stand.png"; // Using Quran image as representative for programs
 
