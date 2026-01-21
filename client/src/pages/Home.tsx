@@ -6,10 +6,37 @@ import trainingImg from "@assets/generated_images/professional_teacher_training_
 import workshopsImg from "@assets/generated_images/interactive_educational_workshop.png";
 import testsImg from "@assets/generated_images/modern_islamic_geometric_patterns_background.png";
 import celebrationsImg from "@assets/generated_images/graduation_celebration_or_award_ceremony.png";
-import programsImg from "@assets/generated_images/quran_on_a_wooden_stand.png"; // Using Quran image as representative for programs
+import arabicImg from "@assets/generated_images/arabic_calligraphy_art.png";
+import programsImg from "@assets/generated_images/quran_on_a_wooden_stand.png"; 
+import mathImg from "@assets/generated_images/mathematics_education_background_with_geometric_shapes.png";
+import englishImg from "@assets/generated_images/english_language_education_background_with_books_and_alphabets.png";
 
 export default function Home() {
   const sections = [
+    {
+      title: "برنامج القرآن الكريم",
+      image: programsImg,
+      href: "/programs/quran",
+      description: "حفظ وتلاوة وتدبر القرآن الكريم على يد نخبة من المشايخ والمحفظين لبناء جيل قرآني متقن."
+    },
+    {
+      title: "برنامج اللغة العربية",
+      image: arabicImg, // Wait, need to check if arabicImg is imported
+      href: "/programs/arabic",
+      description: "إتقان اللغة العربية قراءة وكتابة وتحدثاً بمنهجية متدرجة وشاملة لغرس حب لغة الضاد."
+    },
+    {
+      title: "برنامج الرياضيات",
+      image: mathImg,
+      href: "/programs/math",
+      description: "تأسيس منطقي ورياضي قوي يبني عقول الطلاب وينمي مهارات التفكير الإبداعي والحل السريع."
+    },
+    {
+      title: "برنامج اللغة الإنجليزية",
+      image: englishImg,
+      href: "/programs/english",
+      description: "إتقان مهارات التواصل باللغة الإنجليزية بطلاقة من خلال مناهج عالمية وبيئة تعليمية تفاعلية."
+    },
     {
       title: "التدريب والتطوير",
       image: trainingImg,
@@ -38,7 +65,7 @@ export default function Home() {
       title: "البرامج",
       image: programsImg,
       href: "/programs",
-      description: "برامج تعليمية متخصصة تشمل اللغة العربية والقرآن الكريم لبناء جيل قرآني متقن."
+      description: "استعرض كافة برامجنا التعليمية المتخصصة في مكان واحد."
     }
   ];
 

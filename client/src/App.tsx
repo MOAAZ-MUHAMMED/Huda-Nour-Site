@@ -11,6 +11,8 @@ import Celebrations from "@/pages/Celebrations";
 import Programs from "@/pages/Programs";
 import ArabicProgram from "@/pages/ArabicProgram";
 import QuranProgram from "@/pages/QuranProgram";
+import MathProgram from "@/pages/MathProgram";
+import EnglishProgram from "@/pages/EnglishProgram";
 import { ScrollToTop } from "@/components/ScrollToTop";
 import { FloatingHomeButton } from "@/components/FloatingHomeButton";
 
@@ -28,6 +30,8 @@ function Router() {
         <Route path="/programs" component={Programs} />
         <Route path="/programs/arabic" component={ArabicProgram} />
         <Route path="/programs/quran" component={QuranProgram} />
+        <Route path="/programs/math" component={MathProgram} />
+        <Route path="/programs/english" component={EnglishProgram} />
         <Route component={NotFound} />
       </Switch>
     </>
