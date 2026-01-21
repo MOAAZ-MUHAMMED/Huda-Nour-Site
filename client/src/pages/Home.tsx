@@ -2,11 +2,10 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { SectionCard } from "@/components/SectionCard";
 import heroBg from "@assets/generated_images/educational_institution_hero_background_with_subtle_islamic_geometric_patterns.png";
-import trainingImg from "@assets/generated_images/professional_teacher_training_session.png";
-import workshopsImg from "@assets/generated_images/interactive_educational_workshop.png";
+import workshopsImg from "@assets/generated_images/professional_male-only_training_session.png";
 import testsImg from "@assets/generated_images/modern_islamic_geometric_patterns_background.png";
 import celebrationsImg from "@assets/generated_images/graduation_celebration_or_award_ceremony.png";
-import arabicImg from "@assets/generated_images/arabic_calligraphy_art.png";
+import arabicImg from "@assets/generated_images/arabic_calligraphy_art_with_educational_theme.png";
 import programsImg from "@assets/generated_images/quran_on_a_wooden_stand.png"; 
 import mathImg from "@assets/generated_images/mathematics_education_background_with_geometric_shapes.png";
 import englishImg from "@assets/generated_images/english_language_education_background_with_books_and_alphabets.png";
@@ -29,7 +28,7 @@ export default function Home() {
       title: "برنامج الرياضيات",
       image: mathImg,
       href: "/programs/math",
-      description: "تأسيس منطقي ورياضي قوي يبني عقول الطلاب وينمي مهارات التفكير الإبداعي والحل السريع."
+      description: "منهج تفاعلي متطور يبسط الرياضيات ويحولها من مادة جافة إلى تجربة عقلية ممتعة تنمي مهارات التفكير المنطقي والذكاء الرياضي."
     },
     {
       title: "برنامج اللغة الإنجليزية",
@@ -38,16 +37,10 @@ export default function Home() {
       description: "إتقان مهارات التواصل باللغة الإنجليزية بطلاقة من خلال مناهج عالمية وبيئة تعليمية تفاعلية."
     },
     {
-      title: "التدريب والتطوير",
-      image: trainingImg,
-      href: "/training-dev",
-      description: "برامج تدريبية متكاملة لتطوير الكوادر التعليمية والإدارية وفق أحدث المعايير العالمية."
-    },
-    {
-      title: "الورش التدريبية",
+      title: "الورش التدريبية والتطوير",
       image: workshopsImg,
       href: "/workshops",
-      description: "ورش عمل تفاعلية عملية تهدف إلى إكساب المشاركين مهارات تطبيقية في مجالات متنوعة."
+      description: "برامج وورش عمل متكاملة لتطوير الكوادر التعليمية والإدارية وفق أحدث المعايير العالمية وبأساليب تفاعلية."
     },
     {
       title: "الاختبارات والتقييم",

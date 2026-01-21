@@ -23,7 +23,6 @@ function Router() {
       <FloatingHomeButton />
       <Switch>
         <Route path="/" component={Home} />
-        <Route path="/training-dev" component={TrainingDev} />
         <Route path="/workshops" component={Workshops} />
         <Route path="/tests" component={Tests} />
         <Route path="/celebrations" component={Celebrations} />
