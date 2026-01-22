@@ -29,7 +29,6 @@ export default function HistoryProgram() {
       <Navbar />
       <WhatsAppButton />
       
-      {/* Hero Section */}
       <div className="relative h-[400px] overflow-hidden">
         <img 
           src={historyHero} 

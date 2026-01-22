@@ -1,7 +1,7 @@
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { BookOpen, PenTool, Brain, Star } from "lucide-react";
-import literacyHero from "@/assets/generated_images/arabic_literacy_foundation.png";
+import literacyHero from "@assets/generated_images/arabic_literacy_foundation.png";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { motion } from "framer-motion";
 
