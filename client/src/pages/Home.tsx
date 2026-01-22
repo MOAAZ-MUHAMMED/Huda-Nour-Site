@@ -9,6 +9,8 @@ import arabicImg from "@assets/generated_images/arabic_calligraphy_art_with_educ
 import programsImg from "@assets/generated_images/quran_on_a_wooden_stand.png"; 
 import mathImg from "@assets/generated_images/mathematics_education_background_with_geometric_shapes.png";
 import englishImg from "@assets/generated_images/english_language_education_background_with_books_and_alphabets.png";
+import historyImg from "@assets/generated_images/ancient_maps_and_historical_landmarks_collage.png";
+import booksSectionImg from "@assets/generated_images/stack_of_educational_books_and_curricula.png";
 
 export default function Home() {
   const sections = [
@@ -37,6 +39,12 @@ export default function Home() {
       description: "إتقان مهارات التواصل باللغة الإنجليزية بطلاقة من خلال مناهج عالمية وبيئة تعليمية تفاعلية."
     },
     {
+      title: "برنامج التاريخ والجغرافيا",
+      image: historyImg,
+      href: "/programs/history",
+      description: "رحلة شيقة عبر الزمن والمكان لاستكشاف تاريخ وحضارات العالم وفهم جغرافية كوكبنا بأسلوب تفاعلي."
+    },
+    {
       title: "الورش التدريبية والتطوير",
       image: workshopsImg,
       href: "/workshops",
@@ -53,6 +61,12 @@ export default function Home() {
       image: celebrationsImg,
       href: "/celebrations",
       description: "توثيق لحظات النجاح والتكريم والفعاليات المميزة التي تقيمها المؤسسة."
+    },
+    {
+      title: "الكتب الدراسية",
+      image: booksSectionImg,
+      href: "/curriculum-books",
+      description: "تحميل المناهج الدراسية والكتب التعليمية لمختلف المراحل الدراسية."
     },
     {
       title: "البرامج",

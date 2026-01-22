@@ -8,6 +8,7 @@ import arabicImg from "@assets/generated_images/arabic_calligraphy_art_with_educ
 import quranImg from "@assets/generated_images/quran_on_a_wooden_stand.png";
 import mathImg from "@assets/generated_images/mathematics_education_background_with_geometric_shapes.png";
 import englishImg from "@assets/generated_images/english_language_education_background_with_books_and_alphabets.png";
+import historyImg from "@assets/generated_images/ancient_maps_and_historical_landmarks_collage.png";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 
 export default function Programs() {
@@ -39,6 +40,13 @@ export default function Programs() {
       href: "/programs/english",
       description: "إتقان مهارات التواصل باللغة الإنجليزية بطلاقة من خلال مناهج عالمية.",
       color: "border-secondary/50"
+    },
+    {
+      title: "برنامج التاريخ والجغرافيا",
+      image: historyImg,
+      href: "/programs/history",
+      description: "رحلة شيقة عبر الزمن والمكان لاستكشاف تاريخ وحضارات العالم وفهم جغرافية كوكبنا بأسلوب تفاعلي.",
+      color: "border-primary/50"
     }
   ];
 
