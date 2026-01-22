@@ -9,10 +9,10 @@ import arabicImg from "@assets/generated_images/arabic_calligraphy_art_with_educ
 import programsImg from "@assets/generated_images/quran_on_a_wooden_stand.png"; 
 import mathImg from "@assets/generated_images/mathematics_education_background_with_geometric_shapes.png";
 import englishImg from "@assets/generated_images/english_language_education_background_with_books_and_alphabets.png";
-import historyImg from "@assets/generated_images/ancient_maps_and_historical_landmarks_collage.png";
-import literacyImg from "@assets/generated_images/arabic_literacy_foundation.png";
-import germanImg from "@assets/generated_images/german_language_promo.png";
-import booksSectionImg from "@assets/generated_images/stack_of_educational_books_and_curricula.png";
+import historyImg from "@/assets/generated_images/ancient_maps_and_historical_landmarks_collage.png";
+import literacyImg from "@/assets/generated_images/arabic_literacy_foundation.png";
+import germanImg from "@/assets/generated_images/german_language_promo.png";
+import booksSectionImg from "@/assets/generated_images/stack_of_educational_books_and_curricula.png";
 
 export default function Home() {
   const sections = [
