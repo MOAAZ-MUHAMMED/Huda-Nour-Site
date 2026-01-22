@@ -10,10 +10,18 @@ import programsImg from "@assets/generated_images/quran_on_a_wooden_stand.png";
 import mathImg from "@assets/generated_images/mathematics_education_background_with_geometric_shapes.png";
 import englishImg from "@assets/generated_images/english_language_education_background_with_books_and_alphabets.png";
 import historyImg from "@assets/generated_images/ancient_maps_and_historical_landmarks_collage.png";
+import literacyImg from "@assets/generated_images/arabic_literacy_foundation.png";
+import germanImg from "@assets/generated_images/german_language_promo.png";
 import booksSectionImg from "@assets/generated_images/stack_of_educational_books_and_curricula.png";
 
 export default function Home() {
   const sections = [
+    {
+      title: "تأسيس القراءة والكتابة",
+      image: literacyImg,
+      href: "/programs/literacy",
+      description: "برنامج متخصص للأطفال لتأسيس مهارات القراءة والكتابة بمنهجية التبيان بأسلوب ممتع وشيق."
+    },
     {
       title: "برنامج القرآن الكريم",
       image: programsImg,
@@ -22,7 +30,7 @@ export default function Home() {
     },
     {
       title: "برنامج اللغة العربية",
-      image: arabicImg, // Wait, need to check if arabicImg is imported
+      image: arabicImg,
       href: "/programs/arabic",
       description: "إتقان اللغة العربية قراءة وكتابة وتحدثاً بمنهجية متدرجة وشاملة لغرس حب لغة الضاد."
     },
@@ -43,6 +51,12 @@ export default function Home() {
       image: historyImg,
       href: "/programs/history",
       description: "رحلة شيقة عبر الزمن والمكان لاستكشاف تاريخ وحضارات العالم وفهم جغرافية كوكبنا بأسلوب تفاعلي."
+    },
+    {
+      title: "برنامج اللغة الألمانية",
+      image: germanImg,
+      href: "#",
+      description: "Bald verfügbar (قريباً)"
     },
     {
       title: "الورش التدريبية والتطوير",
@@ -67,12 +81,6 @@ export default function Home() {
       image: booksSectionImg,
       href: "/curriculum-books",
       description: "تحميل المناهج الدراسية والكتب التعليمية لمختلف المراحل الدراسية."
-    },
-    {
-      title: "البرامج",
-      image: programsImg,
-      href: "/programs",
-      description: "استعرض كافة برامجنا التعليمية المتخصصة في مكان واحد."
     }
   ];
 
