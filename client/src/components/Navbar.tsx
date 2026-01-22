@@ -26,8 +26,7 @@ export function Navbar() {
 
   const links = [
     { href: "/", label: "الرئيسية" },
-    { href: "/training-dev", label: "التدريب والتطوير" },
-    { href: "/workshops", label: "الورش التدريبية" },
+    { href: "/workshops", label: "الورش التدريبية والتطوير" },
     { href: "/tests", label: "الاختبارات والتقييم" },
     { href: "/celebrations", label: "الإحتفالات" },
     { href: "/programs", label: "البرامج" },
