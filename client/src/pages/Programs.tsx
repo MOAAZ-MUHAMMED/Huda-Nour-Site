@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { Link } from "wouter";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowLeft } from "lucide-react";
-import arabicImg from "@assets/generated_images/arabic_calligraphy_art_with_educational_theme.png";
+import arabicImg from "@/assets/generated_images/arabic_calligraphy_clear_text.png";
 import quranImg from "@assets/generated_images/quran_on_a_wooden_stand.png";
 import mathImg from "@assets/generated_images/mathematics_education_background_with_geometric_shapes.png";
 import englishImg from "@assets/generated_images/english_language_education_background_with_books_and_alphabets.png";
