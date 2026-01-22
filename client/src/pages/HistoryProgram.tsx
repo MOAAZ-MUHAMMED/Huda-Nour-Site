@@ -1,7 +1,7 @@
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Star, Target, Zap, BookOpen, GraduationCap, Map } from "lucide-react";
-import historyHero from "@assets/generated_images/ancient_maps_and_historical_landmarks_collage.png";
+import historyHero from "@/assets/generated_images/ancient_maps_and_historical_landmarks_collage.png";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { motion } from "framer-motion";
 

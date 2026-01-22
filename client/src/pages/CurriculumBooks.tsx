@@ -1,7 +1,7 @@
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { motion } from "framer-motion";
-import booksHero from "@assets/generated_images/stack_of_educational_books_and_curricula.png";
+import booksHero from "@/assets/generated_images/stack_of_educational_books_and_curricula.png";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { Download, FileText } from "lucide-react";
 
