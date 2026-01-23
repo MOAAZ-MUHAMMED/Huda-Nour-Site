@@ -1,7 +1,7 @@
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Calculator, Lightbulb, BookOpen, Star } from "lucide-react";
-import mathHero from "@assets/generated_images/mathematics_education_background_with_geometric_shapes.png";
+import mathHero from "@/assets/generated_images/mathematics_education_background_with_geometric_shapes.png";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { motion } from "framer-motion";
 

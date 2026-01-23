@@ -1,7 +1,7 @@
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Languages, MessageSquare, Globe, Sparkles, BookOpen } from "lucide-react";
-import englishHero from "@assets/generated_images/english_language_education_background_with_books_and_alphabets.png";
+import englishHero from "@/assets/generated_images/english_language_education_background_with_books_and_alphabets.png";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { motion } from "framer-motion";
 

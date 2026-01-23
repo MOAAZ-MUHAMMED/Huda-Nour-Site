@@ -1,10 +1,10 @@
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { motion } from "framer-motion";
-import workshopsImg from "@assets/generated_images/professional_male-only_training_session.png";
-import mathImg from "@assets/generated_images/interactive_online_math_session_for_children.png";
-import thesisImg from "@assets/generated_images/thesis_and_academic_research_concept.png";
-import roadmapImg from "@assets/generated_images/teachers_roadmap_for_excellence_and_professional_growth.png";
+import workshopsImg from "@/assets/generated_images/professional_male-only_training_session.png";
+import mathImg from "@/assets/generated_images/interactive_online_math_session_for_children.png";
+import thesisImg from "@/assets/generated_images/thesis_and_academic_research_concept.png";
+import roadmapImg from "@/assets/generated_images/teachers_roadmap_for_excellence_and_professional_growth.png";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { CheckCircle2 } from "lucide-react";
 

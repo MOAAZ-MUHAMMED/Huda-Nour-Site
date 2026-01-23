@@ -2,9 +2,9 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { motion } from "framer-motion";
 import { CheckCircle2 } from "lucide-react";
-import trainingImg from "@assets/generated_images/professional_teacher_training_session.png";
-import thesisImg from "@assets/generated_images/thesis_and_academic_research_concept.png";
-import roadmapImg from "@assets/generated_images/teachers_roadmap_for_excellence_and_professional_growth.png";
+import trainingImg from "@/assets/generated_images/professional_teacher_training_session.png";
+import thesisImg from "@/assets/generated_images/thesis_and_academic_research_concept.png";
+import roadmapImg from "@/assets/generated_images/teachers_roadmap_for_excellence_and_professional_growth.png";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 
 export default function TrainingDev() {
