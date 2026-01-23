@@ -13,6 +13,7 @@ import historyImg from "@/assets/generated_images/ancient_maps_and_historical_la
 import literacyImg from "@/assets/generated_images/arabic_literacy_foundation.png";
 import germanImg from "@/assets/generated_images/german_language_promo.png";
 import booksSectionImg from "@/assets/generated_images/stack_of_educational_books_and_curricula.png";
+import teachingImg from "@/assets/attached_images/image_1769177021689.png";
 
 export default function Home() {
   const sections = [
@@ -81,6 +82,12 @@ export default function Home() {
       image: booksSectionImg,
       href: "/curriculum-books",
       description: "تحميل المناهج الدراسية والكتب التعليمية لمختلف المراحل الدراسية."
+    },
+    {
+      title: "كيفية التدريس",
+      image: teachingImg,
+      href: "/teaching-method",
+      description: "تعرف على الوسائل التعليمية والتقنيات الحديثة المستخدمة في دروسنا."
     }
   ];
 

@@ -1,7 +1,8 @@
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Book, Heart, Sparkles, Trophy, CheckCircle, GraduationCap } from "lucide-react";
-import quranImg from "@assets/generated_images/quran_on_a_wooden_stand.png";
+import quranImg from "@/assets/generated_images/quran_on_a_wooden_stand.png";
+import teachingImg from "@/assets/generated_images/quran_teacher_and_students.png";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 
 export default function QuranProgram() {
@@ -79,6 +80,14 @@ export default function QuranProgram() {
                 </li>
               </ul>
             </div>
+          </div>
+
+          <div className="rounded-3xl overflow-hidden shadow-2xl border-4 border-primary/10">
+            <img 
+              src={teachingImg} 
+              alt="حلقات القرآن الكريم" 
+              className="w-full h-auto"
+            />
           </div>
 
         </div>

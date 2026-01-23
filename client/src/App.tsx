@@ -16,6 +16,7 @@ import EnglishProgram from "@/pages/EnglishProgram";
 import HistoryProgram from "@/pages/HistoryProgram";
 import LiteracyProgram from "@/pages/LiteracyProgram";
 import CurriculumBooks from "@/pages/CurriculumBooks";
+import TeachingMethod from "@/pages/TeachingMethod";
 import { ScrollToTop } from "@/components/ScrollToTop";
 import { FloatingHomeButton } from "@/components/FloatingHomeButton";
 
@@ -37,6 +38,7 @@ function Router() {
         <Route path="/programs/history" component={HistoryProgram} />
         <Route path="/programs/literacy" component={LiteracyProgram} />
         <Route path="/curriculum-books" component={CurriculumBooks} />
+        <Route path="/teaching-method" component={TeachingMethod} />
         <Route component={NotFound} />
       </Switch>
     </>
