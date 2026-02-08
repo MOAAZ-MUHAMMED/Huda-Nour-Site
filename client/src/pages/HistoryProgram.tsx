@@ -75,9 +75,7 @@ export default function HistoryProgram() {
             <p className="text-lg text-muted-foreground leading-relaxed mb-8">
               نقدم مادة التاريخ والجغرافيا بأسلوب قصصي وتفاعلي يربط الطالب ببيئته وتاريخه العريق، مستخدمين أحدث الخرائط والوسائل التعليمية البصرية التي تجعل من التعلم متعة حقيقية.
             </p>
-            <button className="bg-primary text-primary-foreground px-8 py-4 rounded-full font-bold text-lg hover:bg-primary/90 transition-colors shadow-lg shadow-primary/20">
-              سجل الآن عبر واتساب
-            </button>
+
           </div>
         </div>
       </main>

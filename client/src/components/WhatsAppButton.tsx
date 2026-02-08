@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { MessageCircle } from "lucide-react";
 
 export function WhatsAppButton() {
-  const phoneNumber = "+249115093299";
+  const phoneNumber = "+201091044501";
   const message = "السلام عليكم، أود التسجيل في برامج مؤسسة الهدى والنور";
   const whatsappUrl = `https://wa.me/${phoneNumber.replace('+', '')}?text=${encodeURIComponent(message)}`;
 

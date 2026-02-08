@@ -1,6 +1,6 @@
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
-import celebrationsImg from "@/assets/generated_images/graduation_celebration_or_award_ceremony.png";
+import celebrationsImg from "@/assets/generated_images/celebration_men_only.png";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 
 export default function Celebrations() {

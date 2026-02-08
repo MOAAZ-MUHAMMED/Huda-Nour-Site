@@ -3,9 +3,10 @@ import { Footer } from "@/components/Footer";
 import { SectionCard } from "@/components/SectionCard";
 import heroBg from "@/assets/generated_images/educational_institution_hero_background_with_subtle_islamic_geometric_patterns.png";
 import workshopsImg from "@/assets/generated_images/professional_male-only_training_session.png";
+import campsImg from "@/assets/generated_images/quran_teacher_and_students.png";
 import testsImg from "@/assets/generated_images/modern_islamic_geometric_patterns_background.png";
 import celebrationsImg from "@/assets/generated_images/celebration_men_only.png";
-import arabicImg from "@/assets/generated_images/arabic_calligraphy_clear_text.png";
+import arabicImg from "@/assets/generated_images/stack_of_educational_books_and_curricula.png";
 import programsImg from "@/assets/generated_images/quran_on_a_wooden_stand.png"; 
 import mathImg from "@/assets/generated_images/mathematics_education_background_with_geometric_shapes.png";
 import englishImg from "@/assets/generated_images/english_language_education_background_with_books_and_alphabets.png";
@@ -17,6 +18,12 @@ import teachingImg from "@/assets/attached_images/image_1769177021689.png";
 
 export default function Home() {
   const sections = [
+    {
+      title: "المعسكرات التعليمية",
+      image: campsImg,
+      href: "/camps",
+      description: "معسكرات صيفية متكاملة توفر تجربة تعليمية ممتعة وشاملة للطلاب في مختلف المراحل الدراسية."
+    },
     {
       title: "تأسيس القراءة والكتابة",
       image: literacyImg,

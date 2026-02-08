@@ -1,16 +1,16 @@
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
+import { MessageCircle } from "lucide-react";
 import { motion } from "framer-motion";
 import img1 from "@/assets/attached_images/image_1769177021689.png";
-import img2 from "@/assets/attached_images/image_1769177044862.png";
 import img3 from "@/assets/attached_images/image_1769177064101.png";
 import img4 from "@/assets/attached_images/image_1769177077626.png";
 import img5 from "@/assets/attached_images/image_1769177089594.png";
 import img6 from "@/assets/attached_images/359b46e3-0a62-4dd6-8167-088845cd662b_1769177095462.png";
 
 export default function TeachingMethod() {
-  const images = [img1, img2, img3, img4, img5, img6];
+  const images = [img1, img3, img4, img5, img6];
 
   return (
     <div className="min-h-screen flex flex-col bg-background">
@@ -43,6 +43,8 @@ export default function TeachingMethod() {
             </motion.div>
           ))}
         </div>
+
+        {/* WhatsApp contact section removed as requested */}
       </main>
 
       <Footer />

@@ -2,7 +2,7 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { motion } from "framer-motion";
 import { FileText, AlertCircle, CheckCircle } from "lucide-react";
-import testsImg from "@/assets/generated_images/modern_islamic_geometric_patterns_background.png";
+import testsImg from "@/assets/generated_images/test1.jpg";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 
 export default function Tests() {

@@ -17,6 +17,8 @@ import HistoryProgram from "@/pages/HistoryProgram";
 import LiteracyProgram from "@/pages/LiteracyProgram";
 import CurriculumBooks from "@/pages/CurriculumBooks";
 import TeachingMethod from "@/pages/TeachingMethod";
+import Camps from "@/pages/Camps";
+import CampGradeSix from "@/pages/CampGradeSix";
 import { ScrollToTop } from "@/components/ScrollToTop";
 import { FloatingHomeButton } from "@/components/FloatingHomeButton";
 
@@ -37,6 +39,8 @@ function Router() {
         <Route path="/programs/english" component={EnglishProgram} />
         <Route path="/programs/history" component={HistoryProgram} />
         <Route path="/programs/literacy" component={LiteracyProgram} />
+        <Route path="/camps" component={Camps} />
+        <Route path="/camps/grade-six" component={CampGradeSix} />
         <Route path="/curriculum-books" component={CurriculumBooks} />
         <Route path="/teaching-method" component={TeachingMethod} />
         <Route component={NotFound} />
