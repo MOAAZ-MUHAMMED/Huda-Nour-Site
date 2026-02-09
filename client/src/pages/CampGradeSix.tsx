@@ -44,28 +44,34 @@ export default function CampGradeSix() {
                 <Heart className="w-6 h-6 text-primary" />
                 لماذا معسكرنا؟
               </h3>
-              <ul className="space-y-4 text-muted-foreground">
-                <li className="flex items-center gap-3 bg-primary/5 p-3 rounded-xl border border-transparent hover:border-primary/20 transition-all">
-                  <Zap className="w-5 h-5 text-primary" />
-                  <span className="font-medium">منسوبو تدريس ذوو خبرة عالية</span>
-                </li>
-                <li className="flex items-center gap-3 bg-primary/5 p-3 rounded-xl border border-transparent hover:border-primary/20 transition-all">
-                  <Zap className="w-5 h-5 text-primary" />
-                  <span className="font-medium">برامج متوازنة بين الأكاديمية والترفيه</span>
-                </li>
-                <li className="flex items-center gap-3 bg-primary/5 p-3 rounded-xl border border-transparent hover:border-primary/20 transition-all">
-                  <Zap className="w-5 h-5 text-primary" />
-                  <span className="font-medium">بيئة آمنة وداعمة للطلاب</span>
-                </li>
-                <li className="flex items-center gap-3 bg-primary/5 p-3 rounded-xl border border-transparent hover:border-primary/20 transition-all">
-                  <Zap className="w-5 h-5 text-primary" />
-                  <span className="font-medium">تتبع مستمر لتقدم كل طالب</span>
-                </li>
-                <li className="flex items-center gap-3 bg-primary/5 p-3 rounded-xl border border-transparent hover:border-primary/20 transition-all">
-                  <Zap className="w-5 h-5 text-primary" />
-                  <span className="font-medium">مراجعات دورية ومراجعات شاملة أثناء الامتحانات مع حل نماذج الامتحانات السابقة</span>
-                </li>
+              <ul className="space-y-4 text-muted-foreground mb-8">
+                {[
+                  "بإشراف معلمين ذوي خبرة تزيد عن 30 عامًا",
+                  "حصص تفاعلية بأسلوب مبسّط ومشجّع",
+                  "شرح وافي وشامل للمنهج",
+                  "مراجعة مكثفة لجميع الدروس",
+                  "حل ومتابعة الواجبات والتمارين",
+                  "أوراق عمل + حل الامتحانات السابقة"
+                ].map((item, i) => (
+                  <li key={i} className="flex items-center gap-3 bg-primary/5 p-3 rounded-xl border border-transparent hover:border-primary/20 transition-all">
+                    <Zap className="w-5 h-5 text-primary" />
+                    <span className="font-medium">{item}</span>
+                  </li>
+                ))}
               </ul>
+
+              <div className="border-t border-secondary/20 pt-6 space-y-4 text-center">
+                <div className="bg-secondary/10 p-4 rounded-xl">
+                  <p className="font-bold text-primary flex items-center justify-center gap-2 mb-1">
+                    🗓️ معك خطوة بخطوة حتى الامتحانات
+                  </p>
+                  <p className="text-xl font-bold text-secondary">26 / 4 / 2026</p>
+                </div>
+
+                <p className="text-lg font-bold text-primary animate-pulse">
+                  📢 سارع بالتسجيل… المقاعد محدودة!
+                </p>
+              </div>
             </div>
           </div>
 
