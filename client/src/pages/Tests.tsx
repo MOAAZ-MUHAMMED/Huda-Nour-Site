@@ -2,7 +2,7 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { motion } from "framer-motion";
 import { FileText, AlertCircle, CheckCircle } from "lucide-react";
-import testsImg from "@/assets/generated_images/test1.jpg";
+import testsImg from "@/assets/generated_images/modern_islamic_geometric_patterns_background.png";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 
 export default function Tests() {
@@ -10,11 +10,11 @@ export default function Tests() {
     <div className="min-h-screen flex flex-col bg-background">
       <Navbar />
       <WhatsAppButton />
-      
+
       <div className="relative h-[300px] overflow-hidden">
-        <img 
-          src={testsImg} 
-          alt="الاختبارات والتقييم" 
+        <img
+          src={testsImg}
+          alt="الاختبارات والتقييم"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
@@ -23,7 +23,7 @@ export default function Tests() {
       </div>
 
       <main className="container px-4 py-12 flex-1 space-y-12">
-        
+
         {/* Teachers Guidelines */}
         <section>
           <div className="flex items-center gap-3 mb-6">
@@ -32,8 +32,8 @@ export default function Tests() {
             </div>
             <h2 className="text-2xl font-bold text-primary">إرشادات هامة للمعلمين أثناء جلسات الامتحانات</h2>
           </div>
-          
-          <motion.div 
+
+          <motion.div
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             className="bg-card border rounded-2xl p-8 shadow-sm"
@@ -69,12 +69,12 @@ export default function Tests() {
             </div>
             <h2 className="text-2xl font-bold text-foreground">تنبيهات هامة للتلاميذ قبل الامتحان</h2>
           </div>
-          
-          <motion.div 
-             initial={{ opacity: 0, y: 10 }}
-             animate={{ opacity: 1, y: 0 }}
-             transition={{ delay: 0.2 }}
-             className="bg-secondary/5 border border-secondary/20 rounded-2xl p-8 shadow-sm"
+
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2 }}
+            className="bg-secondary/5 border border-secondary/20 rounded-2xl p-8 shadow-sm"
           >
             <p className="text-muted-foreground mb-6">حرصًا على سير الامتحان بشكل منظم، يرجى الالتزام بما يلي:</p>
             <ul className="space-y-4">

@@ -1,8 +1,8 @@
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Star, Target, Zap, BookOpen, GraduationCap, Users } from "lucide-react";
-import arabicHero from "@/assets/generated_images/arabic2.png";
-import arabicBookImg from "@/assets/generated_images/photo_2026-01-25_16-12-49.jpg";
+import arabicHero from "@/assets/generated_images/arabic_language_educational_book_cover_art.png";
+import arabicBookImg from "@/assets/generated_images/arabic_literacy_foundation.png";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 
 export default function ArabicProgram() {
@@ -10,11 +10,11 @@ export default function ArabicProgram() {
     <div className="min-h-screen flex flex-col bg-background">
       <Navbar />
       <WhatsAppButton />
-      
+
       <div className="relative h-[400px] overflow-hidden">
-        <img 
-          src={arabicHero} 
-          alt="برنامج اللغة العربية" 
+        <img
+          src={arabicHero}
+          alt="برنامج اللغة العربية"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black/60 flex items-center justify-center">
@@ -27,7 +27,7 @@ export default function ArabicProgram() {
 
       <main className="container px-4 py-16 flex-1">
         <div className="max-w-5xl mx-auto space-y-16">
-          
+
           <div className="flex flex-col md:flex-row gap-12 items-center">
             <div className="md:w-1/2 space-y-6">
               <h2 className="text-3xl font-bold text-primary border-r-4 border-secondary pr-4 font-arabic">الهدى والنور أساس إتقان العربية</h2>

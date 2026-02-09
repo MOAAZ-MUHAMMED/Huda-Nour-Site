@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { Link } from "wouter";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowLeft } from "lucide-react";
-import campImg from "@/assets/generated_images/quran_teacher_and_students.png";
+import campImg from "@/assets/generated_images/camp_6.jpg";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 
 export default function Camps() {
@@ -22,11 +22,11 @@ export default function Camps() {
     <div className="min-h-screen flex flex-col bg-background">
       <Navbar />
       <WhatsAppButton />
-      
+
       <div className="relative h-[300px] overflow-hidden">
-        <img 
-          src={campImg} 
-          alt="المعسكرات التعليمية" 
+        <img
+          src={campImg}
+          alt="المعسكرات التعليمية"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
@@ -42,7 +42,7 @@ export default function Camps() {
 
         <div className="space-y-8">
           <h2 className="text-3xl font-bold text-primary text-center font-arabic">معسكراتنا</h2>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {camps.map((camp, index) => (
               <motion.div
@@ -55,8 +55,8 @@ export default function Camps() {
                 <Link href={camp.href}>
                   <Card className={`h-full cursor-pointer hover:shadow-lg transition-all duration-300 transform hover:scale-105 border-l-4 ${camp.color}`}>
                     <div className="w-full h-48 overflow-hidden rounded-t-lg">
-                      <img 
-                        src={camp.image} 
+                      <img
+                        src={camp.image}
                         alt={camp.title}
                         className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
                       />

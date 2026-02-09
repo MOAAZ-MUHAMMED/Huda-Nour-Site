@@ -3,11 +3,11 @@ import { Footer } from "@/components/Footer";
 import { SectionCard } from "@/components/SectionCard";
 import heroBg from "@/assets/generated_images/educational_institution_hero_background_with_subtle_islamic_geometric_patterns.png";
 import workshopsImg from "@/assets/generated_images/professional_male-only_training_session.png";
-import campsImg from "@/assets/generated_images/quran_teacher_and_students.png";
+import campsImg from "@/assets/generated_images/camp_6.jpg";
 import testsImg from "@/assets/generated_images/modern_islamic_geometric_patterns_background.png";
 import celebrationsImg from "@/assets/generated_images/celebration_men_only.png";
 import arabicImg from "@/assets/generated_images/stack_of_educational_books_and_curricula.png";
-import programsImg from "@/assets/generated_images/quran_on_a_wooden_stand.png"; 
+import programsImg from "@/assets/generated_images/quran_on_a_wooden_stand.png";
 import mathImg from "@/assets/generated_images/mathematics_education_background_with_geometric_shapes.png";
 import englishImg from "@/assets/generated_images/english_language_education_background_with_books_and_alphabets.png";
 import historyImg from "@/assets/generated_images/ancient_maps_and_historical_landmarks_collage.png";
@@ -101,19 +101,19 @@ export default function Home() {
   return (
     <div className="min-h-screen flex flex-col geometric-pattern">
       <Navbar />
-      
+
       {/* Hero Section */}
       <section className="relative h-[500px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img 
-            src={heroBg} 
-            alt="Hero Background" 
+          <img
+            src={heroBg}
+            alt="Hero Background"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-primary/80 mix-blend-multiply" />
           <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent" />
         </div>
-        
+
         <div className="container relative z-10 text-center px-4">
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 drop-shadow-xl font-arabic tracking-wide">
             مؤسسة الهدى والنور
