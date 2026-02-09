@@ -6,7 +6,7 @@ import workshopsImg from "@/assets/generated_images/professional_male-only_train
 import campsImg from "@/assets/generated_images/camp_6.jpg";
 import testsImg from "@/assets/generated_images/modern_islamic_geometric_patterns_background.png";
 import celebrationsImg from "@/assets/generated_images/celebration_men_only.png";
-import arabicImg from "@/assets/generated_images/stack_of_educational_books_and_curricula.png";
+import arabicImg from "@/assets/generated_images/arabic_22.png";
 import programsImg from "@/assets/generated_images/quran_on_a_wooden_stand.png";
 import mathImg from "@/assets/generated_images/mathematics_education_background_with_geometric_shapes.png";
 import englishImg from "@/assets/generated_images/english_language_education_background_with_books_and_alphabets.png";

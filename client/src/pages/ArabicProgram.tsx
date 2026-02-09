@@ -1,8 +1,8 @@
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Star, Target, Zap, BookOpen, GraduationCap, Users } from "lucide-react";
-import arabicHero from "@/assets/generated_images/arabic_language_educational_book_cover_art.png";
-import arabicBookImg from "@/assets/generated_images/arabic_literacy_foundation.png";
+import arabicHero from "@/assets/generated_images/arabic_22.png";
+import arabicBookImg from "@/assets/generated_images/arabic_program_internal.jpg";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 
 export default function ArabicProgram() {
