@@ -2,13 +2,13 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { BookOpen, Users, Trophy, Lightbulb, Heart, Zap } from "lucide-react";
 import campImg from "@/assets/generated_images/camp_6.jpg";
-import { WhatsAppButton } from "@/components/WhatsAppButton";
+
 
 export default function CampGradeSix() {
   return (
     <div className="min-h-screen flex flex-col bg-background">
       <Navbar />
-      <WhatsAppButton />
+
 
       <div className="relative h-[400px] overflow-hidden">
         <img

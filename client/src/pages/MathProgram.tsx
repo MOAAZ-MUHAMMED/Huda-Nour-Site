@@ -15,8 +15,7 @@ export default function MathProgram() {
   return (
     <div className="min-h-screen flex flex-col bg-background">
       <Navbar />
-      <WhatsAppButton />
-      
+
       <div className="relative h-[400px] overflow-hidden">
         <img src={mathHero} alt="برنامج الرياضيات" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-black/60 flex items-center justify-center">
@@ -41,7 +40,7 @@ export default function MathProgram() {
 
           <div className="grid md:grid-cols-3 gap-8">
             {features.map((f, i) => (
-              <motion.div 
+              <motion.div
                 key={i}
                 whileHover={{ y: -5 }}
                 className="bg-primary/5 p-6 rounded-2xl border border-primary/10 text-center space-y-4"

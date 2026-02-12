@@ -5,7 +5,7 @@ import { Link } from "wouter";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowLeft } from "lucide-react";
 import campImg from "@/assets/generated_images/camp_6.jpg";
-import { WhatsAppButton } from "@/components/WhatsAppButton";
+
 
 export default function Camps() {
   const camps = [
@@ -13,7 +13,7 @@ export default function Camps() {
       title: "معسكر الصف السادس الابتدائي",
       image: campImg,
       href: "/camps/grade-six",
-      description: "معسكر صيفي تفاعلي للطلاب في الصف السادس الابتدائي، يجمع بين الأنشطة التعليمية والترفيهية والرياضية.",
+      description: "معسكر تفاعلي للطلاب في الصف السادس الابتدائي، يجمع بين الأنشطة التعليمية والترفيهية والرياضية.",
       color: "border-primary/50"
     }
   ];
@@ -21,7 +21,7 @@ export default function Camps() {
   return (
     <div className="min-h-screen flex flex-col bg-background">
       <Navbar />
-      <WhatsAppButton />
+
 
       <div className="relative h-[300px] overflow-hidden">
         <img

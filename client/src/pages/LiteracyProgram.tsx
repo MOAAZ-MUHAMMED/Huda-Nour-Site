@@ -27,8 +27,7 @@ export default function LiteracyProgram() {
   return (
     <div className="min-h-screen flex flex-col bg-background">
       <Navbar />
-      <WhatsAppButton />
-      
+
       <div className="relative h-[400px] overflow-hidden">
         <img src={literacyHero} alt="تأسيس القراءة والكتابة" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-black/50 flex items-center justify-center text-center p-4">

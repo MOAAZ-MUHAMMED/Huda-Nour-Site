@@ -21,13 +21,16 @@ import Camps from "@/pages/Camps";
 import CampGradeSix from "@/pages/CampGradeSix";
 import { ScrollToTop } from "@/components/ScrollToTop";
 import { FloatingHomeButton } from "@/components/FloatingHomeButton";
+import { WhatsAppButton } from "@/components/WhatsAppButton";
 
 function Router() {
   return (
     <>
       <ScrollToTop />
       <FloatingHomeButton />
+      <WhatsAppButton />
       <Switch>
+
         <Route path="/" component={Home} />
         <Route path="/workshops" component={Workshops} />
         <Route path="/tests" component={Tests} />

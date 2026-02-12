@@ -9,12 +9,12 @@ export default function QuranProgram() {
   return (
     <div className="min-h-screen flex flex-col bg-background">
       <Navbar />
-      <WhatsAppButton />
-      
+
       <div className="relative h-[400px] overflow-hidden">
-        <img 
-          src={quranImg} 
-          alt="برنامج القرآن الكريم" 
+
+        <img
+          src={quranImg}
+          alt="برنامج القرآن الكريم"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black/60 flex items-center justify-center">
@@ -27,14 +27,14 @@ export default function QuranProgram() {
 
       <main className="container px-4 py-16 flex-1">
         <div className="max-w-4xl mx-auto space-y-12">
-          
+
           <div className="prose prose-lg prose-headings:text-primary max-w-none">
             <h2 className="text-3xl font-bold mb-6 border-r-4 border-secondary pr-4 font-arabic flex items-center gap-3">
               <Book className="w-8 h-8 text-primary" />
               عن البرنامج
             </h2>
             <p className="text-xl leading-relaxed text-muted-foreground">
-              برنامج متكامل لحفظ ومراجعة القرآن الكريم، يهدف تخريج حفظة متقنين لكتاب الله، 
+              برنامج متكامل لحفظ ومراجعة القرآن الكريم، يهدف تخريج حفظة متقنين لكتاب الله،
               عاملين به، متخلقين بأخلاقه.
             </p>
           </div>
@@ -83,9 +83,9 @@ export default function QuranProgram() {
           </div>
 
           <div className="rounded-3xl overflow-hidden shadow-2xl border-4 border-primary/10">
-            <img 
-              src={teachingImg} 
-              alt="حلقات القرآن الكريم" 
+            <img
+              src={teachingImg}
+              alt="حلقات القرآن الكريم"
               className="w-full h-auto"
             />
           </div>
@@ -93,8 +93,8 @@ export default function QuranProgram() {
         </div>
       </main>
 
-      <WhatsAppButton />
       <Footer />
     </div>
+
   );
 }

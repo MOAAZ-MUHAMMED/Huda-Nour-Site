@@ -11,7 +11,6 @@ import englishImg from "@/assets/generated_images/english_language_education_bac
 import historyImg from "@/assets/generated_images/ancient_maps_and_historical_landmarks_collage.png";
 import literacyImg from "@/assets/generated_images/arabic_literacy_foundation.png";
 import germanImg from "@/assets/generated_images/german_language_promo.png";
-import { WhatsAppButton } from "@/components/WhatsAppButton";
 
 export default function Programs() {
   const programs = [
@@ -69,8 +68,7 @@ export default function Programs() {
   return (
     <div className="min-h-screen flex flex-col bg-background geometric-pattern">
       <Navbar />
-      <WhatsAppButton />
-      
+
       <div className="container px-4 py-20 flex-1 flex flex-col justify-center items-center">
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4 font-arabic">برامجنا التعليمية</h1>
@@ -81,14 +79,14 @@ export default function Programs() {
           {programs.map((program, index) => (
             <Link key={index} href={program.href}>
               <div className="group cursor-pointer">
-                <motion.div 
+                <motion.div
                   whileHover={{ scale: 1.02 }}
                 >
                   <Card className={`overflow-hidden border-2 ${program.color} transition-colors h-full`}>
                     <div className="h-64 overflow-hidden relative">
-                      <img 
-                        src={program.image} 
-                        alt={program.title} 
+                      <img
+                        src={program.image}
+                        alt={program.title}
                         className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                       />
                       <div className="absolute inset-0 bg-primary/20 group-hover:bg-primary/10 transition-colors" />
@@ -110,7 +108,6 @@ export default function Programs() {
         </div>
       </div>
 
-      <WhatsAppButton />
       <Footer />
     </div>
   );

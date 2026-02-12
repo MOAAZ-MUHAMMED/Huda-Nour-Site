@@ -3,13 +3,13 @@ import { Footer } from "@/components/Footer";
 import { Star, Target, Zap, BookOpen, GraduationCap, Users } from "lucide-react";
 import arabicHero from "@/assets/generated_images/arabic_22.png";
 import arabicBookImg from "@/assets/generated_images/arabic_program_internal.jpg";
-import { WhatsAppButton } from "@/components/WhatsAppButton";
+
 
 export default function ArabicProgram() {
   return (
     <div className="min-h-screen flex flex-col bg-background">
       <Navbar />
-      <WhatsAppButton />
+
 
       <div className="relative h-[400px] overflow-hidden">
         <img
@@ -106,7 +106,6 @@ export default function ArabicProgram() {
         </div>
       </main>
 
-      <WhatsAppButton />
       <Footer />
     </div>
   );

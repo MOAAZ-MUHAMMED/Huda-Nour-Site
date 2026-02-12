@@ -5,8 +5,8 @@ import workshopsImg from "@/assets/generated_images/professional_male-only_train
 import mathImg from "@/assets/generated_images/interactive_online_math_session_for_children.png";
 import thesisImg from "@/assets/generated_images/thesis_and_academic_research_concept.png";
 import roadmapImg from "@/assets/generated_images/teachers_roadmap_for_excellence_and_professional_growth.png";
-import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { CheckCircle2 } from "lucide-react";
+
 
 export default function Workshops() {
   const trainingItems = [
@@ -36,12 +36,12 @@ export default function Workshops() {
   return (
     <div className="min-h-screen flex flex-col bg-background">
       <Navbar />
-      <WhatsAppButton />
-      
+
       <div className="relative h-[300px] overflow-hidden">
-        <img 
-          src={workshopsImg} 
-          alt="الورش التدريبية والتطوير" 
+
+        <img
+          src={workshopsImg}
+          alt="الورش التدريبية والتطوير"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
@@ -55,7 +55,7 @@ export default function Workshops() {
             <h2 className="text-3xl font-bold text-primary text-center font-arabic underline underline-offset-8">برامج التطوير والتميز</h2>
             <div className="space-y-12">
               {trainingItems.map((item, index) => (
-                <motion.div 
+                <motion.div
                   key={index}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -90,7 +90,7 @@ export default function Workshops() {
             <h2 className="text-3xl font-bold text-primary text-center font-arabic underline underline-offset-8">الورش التدريبية التفاعلية</h2>
             <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
               {workshopsList.map((workshop, index) => (
-                <motion.div 
+                <motion.div
                   key={index}
                   initial={{ opacity: 0, scale: 0.95 }}
                   whileInView={{ opacity: 1, scale: 1 }}
@@ -114,7 +114,7 @@ export default function Workshops() {
                   </div>
                 </motion.div>
               ))}
-              
+
               <div className="bg-muted/20 border-2 border-dashed border-muted flex items-center justify-center p-12 rounded-3xl min-h-[400px]">
                 <div className="text-center text-muted-foreground">
                   <h3 className="text-xl font-bold mb-2 font-arabic">المزيد قريباً</h3>

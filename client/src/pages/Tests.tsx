@@ -3,13 +3,13 @@ import { Footer } from "@/components/Footer";
 import { motion } from "framer-motion";
 import { FileText, AlertCircle, CheckCircle } from "lucide-react";
 import testsImg from "@/assets/generated_images/modern_islamic_geometric_patterns_background.png";
-import { WhatsAppButton } from "@/components/WhatsAppButton";
+
 
 export default function Tests() {
   return (
     <div className="min-h-screen flex flex-col bg-background">
       <Navbar />
-      <WhatsAppButton />
+
 
       <div className="relative h-[300px] overflow-hidden">
         <img
@@ -102,8 +102,8 @@ export default function Tests() {
 
       </main>
 
-      <WhatsAppButton />
       <Footer />
     </div>
+
   );
 }

@@ -5,7 +5,7 @@ import { CheckCircle2 } from "lucide-react";
 import trainingImg from "@/assets/generated_images/professional_teacher_training_session.png";
 import thesisImg from "@/assets/generated_images/thesis_and_academic_research_concept.png";
 import roadmapImg from "@/assets/generated_images/teachers_roadmap_for_excellence_and_professional_growth.png";
-import { WhatsAppButton } from "@/components/WhatsAppButton";
+
 
 export default function TrainingDev() {
   const items = [
@@ -26,12 +26,12 @@ export default function TrainingDev() {
   return (
     <div className="min-h-screen flex flex-col bg-background">
       <Navbar />
-      <WhatsAppButton />
-      
+
       <div className="relative h-[300px] overflow-hidden">
-        <img 
-          src={trainingImg} 
-          alt="التدريب والتطوير" 
+
+        <img
+          src={trainingImg}
+          alt="التدريب والتطوير"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
@@ -42,7 +42,7 @@ export default function TrainingDev() {
       <main className="container px-4 py-12 flex-1">
         <div className="space-y-16">
           {items.map((item, index) => (
-            <motion.div 
+            <motion.div
               key={index}
               initial={{ opacity: 0, x: index % 2 === 0 ? 50 : -50 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -74,7 +74,6 @@ export default function TrainingDev() {
         </div>
       </main>
 
-      <WhatsAppButton />
       <Footer />
     </div>
   );

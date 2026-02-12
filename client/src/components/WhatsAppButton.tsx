@@ -1,23 +1,37 @@
 import { Button } from "@/components/ui/button";
 import { MessageCircle } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
 
 export function WhatsAppButton() {
-  const phoneNumber = "+201091044501";
-  const message = "السلام عليكم، أود التسجيل في برامج مؤسسة الهدى والنور";
-  const whatsappUrl = `https://wa.me/${phoneNumber.replace('+', '')}?text=${encodeURIComponent(message)}`;
+  const phoneNumber = "201091044501";
+  const message = "السلام عليكم، أود الاستفسار عن برامج مؤسسة الهدى والنور";
+  const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
   return (
-    <div className="flex justify-center p-8">
-      <Button 
-        asChild
-        size="lg"
-        className="bg-green-600 hover:bg-green-700 text-white gap-2 rounded-full px-8 py-6 text-lg shadow-lg hover:shadow-green-200 transition-all"
+    <AnimatePresence>
+      <motion.div 
+        className="fixed bottom-6 right-6 z-50"
+        initial={{ scale: 0, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        transition={{ type: "spring", stiffness: 260, damping: 20 }}
       >
-        <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
-          <MessageCircle className="w-6 h-6" />
-          اضغط للتسجيل
-        </a>
-      </Button>
-    </div>
+        <Button 
+          asChild
+          size="icon"
+          className="h-16 w-16 bg-[#25D366] hover:bg-[#128C7E] text-white rounded-full shadow-2xl transition-all hover:scale-110 active:scale-95 border-none"
+        >
+          <a 
+            href={whatsappUrl} 
+            target="_blank" 
+            rel="noopener noreferrer"
+            aria-label="تواصل معنا عبر واتساب"
+            className="flex items-center justify-center w-full h-full"
+          >
+            <MessageCircle className="w-8 h-8 fill-current" />
+          </a>
+        </Button>
+      </motion.div>
+    </AnimatePresence>
   );
 }
+
