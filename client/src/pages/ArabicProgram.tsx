@@ -1,6 +1,7 @@
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
-import { Star, Target, Zap, BookOpen, GraduationCap, Users } from "lucide-react";
+import { Star, Target, Zap, BookOpen, GraduationCap, Users, MessageCircle } from "lucide-react";
+import { Button } from "@/components/ui/button";
 import arabicHero from "@/assets/generated_images/arabic_22.png";
 import arabicBookImg from "@/assets/generated_images/arabic_program_internal.jpg";
 
@@ -102,6 +103,24 @@ export default function ArabicProgram() {
                 </li>
               </ul>
             </div>
+          </div>
+
+          <div className="text-center mt-12">
+            <Button
+              asChild
+              size="lg"
+              className="rounded-full bg-[#25D366] hover:bg-[#20ba5a] text-white px-10 h-16 text-xl shadow-xl hover:scale-105 transition-all font-arabic"
+            >
+              <a
+                href="https://wa.me/201091044501?text=السلام عليكم، أود التسجيل في برنامج اللغة العربية"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3"
+              >
+                <MessageCircle className="w-8 h-8 fill-current" />
+                اضغط للتسجيل عبر واتساب
+              </a>
+            </Button>
           </div>
         </div>
       </main>

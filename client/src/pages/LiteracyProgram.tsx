@@ -1,8 +1,8 @@
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
-import { BookOpen, PenTool, Brain, Star } from "lucide-react";
+import { BookOpen, PenTool, Brain, Star, MessageCircle } from "lucide-react";
 import literacyHero from "@/assets/generated_images/arabic_literacy_foundation.png";
-import { WhatsAppButton } from "@/components/WhatsAppButton";
+import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 
 export default function LiteracyProgram() {
@@ -60,6 +60,24 @@ export default function LiteracyProgram() {
             <div className="flex items-center gap-2 text-primary font-bold"><Star className="fill-primary w-5 h-5" /> متابعة دورية</div>
             <div className="flex items-center gap-2 text-primary font-bold"><Star className="fill-primary w-5 h-5" /> بيئة آمنة</div>
             <div className="flex items-center gap-2 text-primary font-bold"><Star className="fill-primary w-5 h-5" /> معلمين متخصصين</div>
+          </div>
+
+          <div className="text-center mt-12">
+            <Button
+              asChild
+              size="lg"
+              className="rounded-full bg-[#25D366] hover:bg-[#20ba5a] text-white px-10 h-16 text-xl shadow-xl hover:scale-105 transition-all font-arabic"
+            >
+              <a
+                href="https://wa.me/201091044501?text=السلام عليكم، أود التسجيل في برنامج تأسيس القراءة والكتابة"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3"
+              >
+                <MessageCircle className="w-8 h-8 fill-current" />
+                اضغط للتسجيل عبر واتساب
+              </a>
+            </Button>
           </div>
         </div>
       </main>

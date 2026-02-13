@@ -15,7 +15,6 @@ export default function TeachingMethod() {
   return (
     <div className="min-h-screen flex flex-col bg-background">
       <Navbar />
-      <WhatsAppButton />
 
       <div className="bg-primary/5 py-16 text-center">
         <h1 className="text-4xl md:text-5xl font-bold text-primary font-arabic mb-4">كيفية التدريس</h1>

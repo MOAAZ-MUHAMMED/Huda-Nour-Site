@@ -1,9 +1,9 @@
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
-import { Book, Heart, Sparkles, Trophy, CheckCircle, GraduationCap } from "lucide-react";
+import { Book, Heart, Sparkles, Trophy, CheckCircle, GraduationCap, MessageCircle } from "lucide-react";
 import quranImg from "@/assets/generated_images/quran_on_a_wooden_stand.png";
 import teachingImg from "@/assets/generated_images/quran_teacher_and_students.png";
-import { WhatsAppButton } from "@/components/WhatsAppButton";
+import { Button } from "@/components/ui/button";
 
 export default function QuranProgram() {
   return (
@@ -90,6 +90,23 @@ export default function QuranProgram() {
             />
           </div>
 
+          <div className="text-center mt-12">
+            <Button
+              asChild
+              size="lg"
+              className="rounded-full bg-[#25D366] hover:bg-[#20ba5a] text-white px-10 h-16 text-xl shadow-xl hover:scale-105 transition-all font-arabic"
+            >
+              <a
+                href="https://wa.me/201091044501?text=السلام عليكم، أود التسجيل في برنامج القرآن الكريم"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3"
+              >
+                <MessageCircle className="w-8 h-8 fill-current" />
+                اضغط للتسجيل عبر واتساب
+              </a>
+            </Button>
+          </div>
         </div>
       </main>
 

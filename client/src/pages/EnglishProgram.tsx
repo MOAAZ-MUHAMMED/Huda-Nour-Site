@@ -1,8 +1,8 @@
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
-import { Languages, MessageSquare, Globe, Sparkles, BookOpen } from "lucide-react";
+import { Languages, MessageSquare, Globe, Sparkles, BookOpen, MessageCircle } from "lucide-react";
 import englishHero from "@/assets/generated_images/english_language_education_background_with_books_and_alphabets.png";
-import { WhatsAppButton } from "@/components/WhatsAppButton";
+import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 
 export default function EnglishProgram() {
@@ -52,6 +52,24 @@ export default function EnglishProgram() {
                 <p className="text-muted-foreground">{h.desc}</p>
               </motion.div>
             ))}
+          </div>
+
+          <div className="text-center mt-12">
+            <Button
+              asChild
+              size="lg"
+              className="rounded-full bg-[#25D366] hover:bg-[#20ba5a] text-white px-10 h-16 text-xl shadow-xl hover:scale-105 transition-all font-arabic"
+            >
+              <a
+                href="https://wa.me/201091044501?text=السلام عليكم، أود التسجيل في برنامج اللغة الإنجليزية"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3"
+              >
+                <MessageCircle className="w-8 h-8 fill-current" />
+                اضغط للتسجيل عبر واتساب
+              </a>
+            </Button>
           </div>
         </div>
       </main>

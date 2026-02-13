@@ -5,7 +5,8 @@ import workshopsImg from "@/assets/generated_images/professional_male-only_train
 import mathImg from "@/assets/generated_images/interactive_online_math_session_for_children.png";
 import thesisImg from "@/assets/generated_images/thesis_and_academic_research_concept.png";
 import roadmapImg from "@/assets/generated_images/teachers_roadmap_for_excellence_and_professional_growth.png";
-import { CheckCircle2 } from "lucide-react";
+import { CheckCircle2, MessageCircle } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 
 export default function Workshops() {
@@ -124,9 +125,29 @@ export default function Workshops() {
             </div>
           </div>
         </div>
-      </main>
 
-      <Footer />
+        <div className="text-center pt-8 border-t">
+          <h2 className="text-2xl font-bold text-primary mb-6 font-arabic">هل ترغب في الانضمام لإحدى ورشنا؟</h2>
+          <Button
+            asChild
+            size="lg"
+            className="rounded-full bg-[#25D366] hover:bg-[#20ba5a] text-white px-10 h-16 text-xl shadow-xl hover:scale-105 transition-all font-arabic"
+          >
+            <a
+              href="https://wa.me/201091044501?text=السلام عليكم، أود الاستفسار عن الورش التدريبية"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-3"
+            >
+              <MessageCircle className="w-8 h-8 fill-current" />
+              اضغط للتسجيل أو الاستفسار عبر واتساب
+            </a>
+          </Button>
+        </div>
     </div>
+      </main >
+
+    <Footer />
+    </div >
   );
 }

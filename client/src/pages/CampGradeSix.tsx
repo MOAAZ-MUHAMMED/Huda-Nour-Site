@@ -1,6 +1,7 @@
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
-import { BookOpen, Users, Trophy, Lightbulb, Heart, Zap } from "lucide-react";
+import { BookOpen, Users, Trophy, Lightbulb, Heart, Zap, MessageCircle } from "lucide-react";
+import { Button } from "@/components/ui/button";
 import campImg from "@/assets/generated_images/camp_6.jpg";
 
 
@@ -71,6 +72,24 @@ export default function CampGradeSix() {
                 <p className="text-lg font-bold text-primary animate-pulse">
                   📢 سارع بالتسجيل… المقاعد محدودة!
                 </p>
+
+                <div className="pt-4">
+                  <Button
+                    asChild
+                    size="lg"
+                    className="rounded-full bg-[#25D366] hover:bg-[#20ba5a] text-white px-10 h-16 text-xl shadow-xl hover:scale-105 transition-all font-arabic w-full md:w-auto"
+                  >
+                    <a
+                      href="https://wa.me/201091044501?text=السلام عليكم، أود التسجيل في معسكر الصف السادس الابتدائي"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center justify-center gap-3"
+                    >
+                      <MessageCircle className="w-8 h-8 fill-current" />
+                      اضغط للتسجيل عبر واتساب
+                    </a>
+                  </Button>
+                </div>
               </div>
             </div>
           </div>

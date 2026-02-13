@@ -1,8 +1,8 @@
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
-import { Calculator, Lightbulb, BookOpen, Star } from "lucide-react";
+import { Calculator, Lightbulb, BookOpen, Star, MessageCircle } from "lucide-react";
 import mathHero from "@/assets/generated_images/mathematics_education_background_with_geometric_shapes.png";
-import { WhatsAppButton } from "@/components/WhatsAppButton";
+import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 
 export default function MathProgram() {
@@ -52,6 +52,24 @@ export default function MathProgram() {
                 <p className="text-muted-foreground">{f.desc}</p>
               </motion.div>
             ))}
+          </div>
+
+          <div className="text-center mt-12">
+            <Button
+              asChild
+              size="lg"
+              className="rounded-full bg-[#25D366] hover:bg-[#20ba5a] text-white px-10 h-16 text-xl shadow-xl hover:scale-105 transition-all font-arabic"
+            >
+              <a
+                href="https://wa.me/201091044501?text=السلام عليكم، أود التسجيل في برنامج الرياضيات"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3"
+              >
+                <MessageCircle className="w-8 h-8 fill-current" />
+                اضغط للتسجيل عبر واتساب
+              </a>
+            </Button>
           </div>
         </div>
       </main>

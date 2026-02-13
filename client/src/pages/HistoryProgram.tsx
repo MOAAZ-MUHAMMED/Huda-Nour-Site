@@ -1,8 +1,8 @@
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
-import { Star, Target, Zap, BookOpen, GraduationCap, Map } from "lucide-react";
+import { Star, Target, Zap, BookOpen, GraduationCap, Map, History, MessageCircle } from "lucide-react";
 import historyHero from "@/assets/generated_images/ancient_maps_and_historical_landmarks_collage.png";
-import { WhatsAppButton } from "@/components/WhatsAppButton";
+import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 
 export default function HistoryProgram() {
@@ -75,12 +75,29 @@ export default function HistoryProgram() {
               نقدم مادة التاريخ والجغرافيا بأسلوب قصصي وتفاعلي يربط الطالب ببيئته وتاريخه العريق، مستخدمين أحدث الخرائط والوسائل التعليمية البصرية التي تجعل من التعلم متعة حقيقية.
             </p>
 
+            <div className="text-center mt-12">
+              <Button
+                asChild
+                size="lg"
+                className="rounded-full bg-[#25D366] hover:bg-[#20ba5a] text-white px-10 h-16 text-xl shadow-xl hover:scale-105 transition-all font-arabic"
+              >
+                <a
+                  href="https://wa.me/201091044501?text=السلام عليكم، أود التسجيل في برنامج التاريخ والجغرافيا"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3"
+                >
+                  <MessageCircle className="w-8 h-8 fill-current" />
+                  اضغط للتسجيل عبر واتساب
+                </a>
+              </Button>
+            </div>
           </div>
         </div>
-      </main>
+      </main >
 
       <Footer />
-    </div>
+    </div >
   );
 }
 
