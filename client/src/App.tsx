@@ -1,4 +1,5 @@
 import { Switch, Route } from "wouter";
+// Build version: 1.0.1 - Force refresh
 import { queryClient } from "./lib/queryClient";
 import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";

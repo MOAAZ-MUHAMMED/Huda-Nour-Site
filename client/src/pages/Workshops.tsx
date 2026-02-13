@@ -144,10 +144,9 @@ export default function Workshops() {
             </a>
           </Button>
         </div>
-    </div>
-      </main >
+      </main>
 
-    <Footer />
-    </div >
+      <Footer />
+    </div>
   );
 }

@@ -2,7 +2,7 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { motion } from "framer-motion";
 import booksHero from "@/assets/generated_images/stack_of_educational_books_and_curricula.png";
-import { WhatsAppButton } from "@/components/WhatsAppButton";
+
 import { Download, FileText } from "lucide-react";
 
 export default function CurriculumBooks() {
@@ -20,12 +20,12 @@ export default function CurriculumBooks() {
   return (
     <div className="min-h-screen flex flex-col bg-background">
       <Navbar />
-      <WhatsAppButton />
-      
+
+
       <div className="relative h-[300px] overflow-hidden">
-        <img 
-          src={booksHero} 
-          alt="الكتب الدراسية" 
+        <img
+          src={booksHero}
+          alt="الكتب الدراسية"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
@@ -50,7 +50,7 @@ export default function CurriculumBooks() {
                 </div>
                 <h3 className="text-xl font-bold font-arabic">{book.title}</h3>
               </div>
-              <a 
+              <a
                 href={book.link}
                 className="flex items-center gap-2 bg-secondary/10 hover:bg-secondary text-secondary-foreground hover:text-white px-6 py-3 rounded-xl font-bold transition-all"
               >

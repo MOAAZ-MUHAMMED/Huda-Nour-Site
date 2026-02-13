@@ -1,18 +1,16 @@
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import celebrationsImg from "@/assets/generated_images/celebration_men_only.png";
-import { WhatsAppButton } from "@/components/WhatsAppButton";
 
 export default function Celebrations() {
   return (
     <div className="min-h-screen flex flex-col bg-background">
       <Navbar />
-      <WhatsAppButton />
-      
+
       <div className="relative h-[300px] overflow-hidden">
-        <img 
-          src={celebrationsImg} 
-          alt="الإحتفالات" 
+        <img
+          src={celebrationsImg}
+          alt="الإحتفالات"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
@@ -29,7 +27,7 @@ export default function Celebrations() {
               <p className="text-muted-foreground">صور من حفل تكريم الطلاب المتفوقين للعام الدراسي الحالي.</p>
             </div>
           </div>
-          
+
           <div className="rounded-2xl overflow-hidden shadow-lg">
             <div className="w-full h-64 bg-muted flex items-center justify-center text-muted-foreground">
               <span>صور قادمة قريباً</span>
@@ -42,8 +40,8 @@ export default function Celebrations() {
         </div>
       </main>
 
-      <WhatsAppButton />
+
       <Footer />
-    </div>
+    </div >
   );
 }
