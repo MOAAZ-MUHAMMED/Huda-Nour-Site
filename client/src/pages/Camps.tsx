@@ -3,7 +3,8 @@ import { Footer } from "@/components/Footer";
 import { motion } from "framer-motion";
 import { Link } from "wouter";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, MessageCircle } from "lucide-react";
+import { Button } from "@/components/ui/button";
 import campImg from "@/assets/generated_images/camp_6.jpg";
 
 
@@ -76,6 +77,23 @@ export default function Camps() {
               </motion.div>
             ))}
           </div>
+        </div>
+        <div className="text-center mt-12 pt-8 border-t">
+          <Button
+            asChild
+            size="lg"
+            className="rounded-full bg-[#25D366] hover:bg-[#20ba5a] text-white px-10 h-16 text-xl shadow-xl hover:scale-105 transition-all font-arabic"
+          >
+            <a
+              href="https://wa.me/201091044501?text=السلام عليكم، أود الاستفسار عن المعسكرات التعليمية"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-3"
+            >
+              <MessageCircle className="w-8 h-8 fill-current" />
+              إضغط للتسجيل
+            </a>
+          </Button>
         </div>
       </main>
 

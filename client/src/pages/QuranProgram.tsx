@@ -103,7 +103,7 @@ export default function QuranProgram() {
                 className="flex items-center gap-3"
               >
                 <MessageCircle className="w-8 h-8 fill-current" />
-                اضغط للتسجيل عبر واتساب
+                إضغط للتسجيل
               </a>
             </Button>
           </div>

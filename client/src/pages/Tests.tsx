@@ -1,7 +1,8 @@
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { motion } from "framer-motion";
-import { FileText, AlertCircle, CheckCircle } from "lucide-react";
+import { FileText, AlertCircle, CheckCircle, MessageCircle } from "lucide-react";
+import { Button } from "@/components/ui/button";
 import testsImg from "@/assets/generated_images/modern_islamic_geometric_patterns_background.png";
 
 
@@ -18,7 +19,7 @@ export default function Tests() {
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
-          <h1 className="text-4xl font-bold text-white">الاختبارات والتقييم</h1>
+          <h1 className="text-4xl font-bold text-white font-arabic">الاختبارات والتقييم</h1>
         </div>
       </div>
 
@@ -30,7 +31,7 @@ export default function Tests() {
             <div className="p-3 rounded-full bg-primary/10 text-primary">
               <FileText className="w-6 h-6" />
             </div>
-            <h2 className="text-2xl font-bold text-primary">إرشادات هامة للمعلمين أثناء جلسات الامتحانات</h2>
+            <h2 className="text-2xl font-bold text-primary font-arabic">إرشادات هامة للمعلمين أثناء جلسات الامتحانات</h2>
           </div>
 
           <motion.div
@@ -38,7 +39,7 @@ export default function Tests() {
             animate={{ opacity: 1, y: 0 }}
             className="bg-card border rounded-2xl p-8 shadow-sm"
           >
-            <p className="text-muted-foreground mb-6">حرصًا على انتظام سير الامتحانات، نأمل الالتزام بما يلي:</p>
+            <p className="text-muted-foreground mb-6 font-arabic">حرصًا على انتظام سير الامتحانات، نأمل الالتزام بما يلي:</p>
             <ul className="space-y-4">
               {[
                 "إرسال رابط الجلسة قبل 15 دقيقة من موعد الامتحان.",
@@ -49,13 +50,13 @@ export default function Tests() {
                 "كتابة تقرير في الحجرة يوضح كيف سارت الجلسة وأي ملاحظات تم رصدها.",
                 "تسليم أوراق الإجابة مع التأكد من الاستلام والتسليم لمعلم المادة المختص."
               ].map((item, i) => (
-                <li key={i} className="flex items-start gap-3 text-foreground/80">
+                <li key={i} className="flex items-start gap-3 text-foreground/80 font-arabic">
                   <CheckCircle className="w-5 h-5 text-primary shrink-0 mt-1" />
                   <span>{item}</span>
                 </li>
               ))}
             </ul>
-            <div className="mt-8 pt-6 border-t text-center text-primary font-medium">
+            <div className="mt-8 pt-6 border-t text-center text-primary font-medium font-arabic">
               شاكرين ومقدّرين تعاونكم وحرصكم على إخراج الامتحانات بالشكل اللائق.
             </div>
           </motion.div>
@@ -67,7 +68,7 @@ export default function Tests() {
             <div className="p-3 rounded-full bg-secondary/10 text-secondary-foreground">
               <AlertCircle className="w-6 h-6" />
             </div>
-            <h2 className="text-2xl font-bold text-foreground">تنبيهات هامة للتلاميذ قبل الامتحان</h2>
+            <h2 className="text-2xl font-bold text-foreground font-arabic">تنبيهات هامة للتلاميذ قبل الامتحان</h2>
           </div>
 
           <motion.div
@@ -76,7 +77,7 @@ export default function Tests() {
             transition={{ delay: 0.2 }}
             className="bg-secondary/5 border border-secondary/20 rounded-2xl p-8 shadow-sm"
           >
-            <p className="text-muted-foreground mb-6">حرصًا على سير الامتحان بشكل منظم، يرجى الالتزام بما يلي:</p>
+            <p className="text-muted-foreground mb-6 font-arabic">حرصًا على سير الامتحان بشكل منظم، يرجى الالتزام بما يلي:</p>
             <ul className="space-y-4">
               {[
                 "الدخول إلى رابط الامتحان قبل 15 دقيقة من موعده، وذلك بمجرد إرسال الرابط.",
@@ -86,19 +87,37 @@ export default function Tests() {
                 "التأكد من أن التصوير واضح وكامل لجميع ورقة الامتحان.",
                 "المراقب غير مسؤول عن أي تصوير ناقص أو غير واضح أو مشوّش."
               ].map((item, i) => (
-                <li key={i} className="flex items-start gap-3 text-foreground/80">
+                <li key={i} className="flex items-start gap-3 text-foreground/80 font-arabic">
                   <CheckCircle className="w-5 h-5 text-primary shrink-0 mt-1" />
                   <span>{item}</span>
                 </li>
               ))}
             </ul>
-            <div className="mt-8 pt-6 border-t border-secondary/20 text-center font-medium">
+            <div className="mt-8 pt-6 border-t border-secondary/20 text-center font-medium font-arabic">
               الالتزام بهذه التعليمات يساعدكم على أداء الامتحان بهدوء ودون أي مشكلات.
               <br />
               <span className="text-primary font-bold mt-2 block">🌟 مع تمنياتنا لكم بالتوفيق والنجاح 🌟</span>
             </div>
           </motion.div>
         </section>
+
+        <div className="text-center mt-12 pt-8 border-t">
+          <Button
+            asChild
+            size="lg"
+            className="rounded-full bg-[#25D366] hover:bg-[#20ba5a] text-white px-10 h-16 text-xl shadow-xl hover:scale-105 transition-all font-arabic"
+          >
+            <a
+              href="https://wa.me/201091044501?text=السلام عليكم، أود الاستفسار عن الاختبارات والتقييم"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-3"
+            >
+              <MessageCircle className="w-8 h-8 fill-current" />
+              إضغط للتسجيل
+            </a>
+          </Button>
+        </div>
 
       </main>
 
