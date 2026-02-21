@@ -1,6 +1,7 @@
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { SectionCard } from "@/components/SectionCard";
+import { AboutSection } from "@/components/AboutSection";
 import heroBg from "@/assets/generated_images/educational_institution_hero_background_with_subtle_islamic_geometric_patterns.png";
 import workshopsImg from "@/assets/generated_images/professional_male-only_training_session.png";
 import campsImg from "@/assets/generated_images/camp_6.jpg";
@@ -118,14 +119,18 @@ export default function Home() {
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 drop-shadow-xl font-arabic tracking-wide">
             مؤسسة الهدى والنور
           </h1>
-          <p className="text-xl md:text-2xl text-white/90 max-w-2xl mx-auto font-light leading-relaxed">
+          <p className="text-xl md:text-2xl text-white/90 max-w-2xl mx-auto font-light leading-relaxed font-arabic">
             نسعى لبناء جيل واعٍ، متميز خلقاً وعلماً، من خلال بيئة تعليمية محفزة وكوادر مؤهلة
           </p>
         </div>
       </section>
 
+      {/* About Section */}
+      <AboutSection />
+
       {/* Main Content Grid */}
-      <main className="container px-4 md:px-6 py-16 -mt-20 relative z-20">
+      <main className="container px-4 md:px-6 py-16 relative z-20">
+        <h2 className="text-3xl font-bold text-primary text-center mb-12 font-arabic">برامجنا وخدماتنا التعليمية</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {sections.map((section, index) => (
             <SectionCard
