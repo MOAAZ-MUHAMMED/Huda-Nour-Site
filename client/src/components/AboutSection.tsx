@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Award, Users, BookOpen, Heart } from "lucide-react";
+import logo from "@/assets/generated_images/logo1.jpg";
 
 export function AboutSection() {
     const stats = [
@@ -22,10 +23,20 @@ export function AboutSection() {
                         viewport={{ once: true }}
                         className="lg:w-1/2 space-y-6 text-right"
                     >
-                        <h2 className="text-3xl md:text-4xl font-bold text-primary font-sans leading-tight">
-                            من نحن؟
-                            <span className="block text-xl md:text-2xl text-secondary mt-4 font-sans">مؤسسة الهدى والنور التعليمية: ريادة في التأسيس وبناء القيم</span>
-                        </h2>
+                        <div className="flex items-center gap-4 justify-end mb-4">
+                            <h2 className="text-3xl md:text-4xl font-bold text-primary font-sans leading-tight">
+                                من نحن؟
+                            </h2>
+                            <motion.div
+                                whileHover={{ scale: 1.1, rotate: 5 }}
+                                className="w-16 h-16 md:w-20 md:h-20 rounded-full border-2 border-secondary overflow-hidden shadow-lg bg-white shrink-0"
+                            >
+                                <img src={logo} alt="Logo" className="w-full h-full object-cover" />
+                            </motion.div>
+                        </div>
+                        <h3 className="text-xl md:text-2xl font-bold text-secondary font-sans">
+                            مؤسسة الهدى والنور التعليمية: ريادة في التأسيس وبناء القيم
+                        </h3>
 
                         <p className="text-xl leading-relaxed text-muted-foreground font-sans">
                             نحن في **مؤسسة الهدى والنور التعليمية**، نعتبر أنفسنا شركاءكم في رحلة بناء عقول أبنائكم. بخبرة تمتد لأكثر من **30 عاماً** في الحقل التربوي، نقدم منظومة تعليمية متكاملة تجمع بين **تحفيظ القرآن الكريم** بأحكام التجويد، و**تأسيس اللغة العربية** للأطفال بمنهجية "التبيان" العالمية.
