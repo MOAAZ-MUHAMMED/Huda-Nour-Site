@@ -21,28 +21,28 @@ export function AboutSection() {
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.8 }}
                         viewport={{ once: true }}
-                        className="lg:w-1/2 space-y-6 text-right"
+                        className="lg:w-1/2 space-y-6 text-center"
                     >
-                        <div className="flex items-center gap-8 justify-end mb-4 pr-4">
-                            <h2 className="text-3xl md:text-5xl font-bold text-primary font-sans leading-tight">
-                                من نحن؟
-                            </h2>
+                        <div className="flex flex-col items-center gap-6 mb-8 text-center">
                             <motion.div
-                                whileHover={{ scale: 1.1, rotate: 5 }}
-                                className="w-32 h-32 md:w-48 md:h-48 rounded-full border-4 border-secondary/40 overflow-hidden shadow-2xl bg-white shrink-0"
+                                whileHover={{ scale: 1.05, rotate: 2 }}
+                                className="w-40 h-40 md:w-56 md:h-56 rounded-full border-4 border-secondary/40 overflow-hidden shadow-2xl bg-white shrink-0"
                             >
                                 <img src={logo} alt="Logo" className="w-full h-full object-cover" />
                             </motion.div>
+                            <h2 className="text-4xl md:text-5xl font-bold text-primary font-sans leading-tight mt-4">
+                                من نحن؟
+                            </h2>
                         </div>
-                        <h3 className="text-xl md:text-2xl font-bold text-secondary font-sans">
+                        <h3 className="text-xl md:text-3xl font-bold text-secondary font-sans text-center">
                             مؤسسة الهدى والنور التعليمية: ريادة في التأسيس وبناء القيم
                         </h3>
 
-                        <p className="text-xl leading-relaxed text-muted-foreground font-sans">
+                        <p className="text-xl leading-relaxed text-muted-foreground font-sans text-center">
                             نحن في **مؤسسة الهدى والنور التعليمية**، نعتبر أنفسنا شركاءكم في رحلة بناء عقول أبنائكم. بخبرة تمتد لأكثر من **30 عاماً** في الحقل التربوي، نقدم منظومة تعليمية متكاملة تجمع بين **تحفيظ القرآن الكريم** بأحكام التجويد، و**تأسيس اللغة العربية** للأطفال بمنهجية "التبيان" العالمية.
                         </p>
 
-                        <p className="text-xl leading-relaxed text-muted-foreground font-sans">
+                        <p className="text-xl leading-relaxed text-muted-foreground font-sans text-center">
                             تعتمد رؤيتنا على دمج الأساليب التربوية الأصيلة مع تقنيات **التعليم التفاعلي الحديثة**، لتشمل برامجنا تقوية الطلاب في **الرياضيات، الإنجليزية، والتاريخ**، بالإضافة إلى دوراتنا المتميزة في **تطوير المعلمين** ورفع كفاءة الكوادر التعليمية عبر "خارطة التميز للمعلم".
                         </p>
 
