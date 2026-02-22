@@ -4,7 +4,8 @@ import { motion } from "framer-motion";
 import { Link } from "wouter";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowLeft } from "lucide-react";
-import arabicImg from "@/assets/generated_images/arabic_literacy_foundation.png";
+import arabicImg from "@/assets/generated_images/arabic123.png";
+import tebImg from "@/assets/generated_images/teb1.jpg";
 import quranImg from "@/assets/generated_images/quran_on_a_wooden_stand.png";
 import mathImg from "@/assets/generated_images/mathematics_education_background_with_geometric_shapes.png";
 import englishImg from "@/assets/generated_images/english_language_education_background_with_books_and_alphabets.png";
@@ -14,6 +15,13 @@ import germanImg from "@/assets/generated_images/german_language_promo.png";
 
 export default function Programs() {
   const programs = [
+    {
+      title: "برنامج منهج التبيان",
+      image: tebImg,
+      href: "/programs/tebyan",
+      description: "إتقان القراءة والكتابة والحساب في شهرين فقط مع معلمين خبرة 30 عاماً.",
+      color: "border-secondary/50"
+    },
     {
       title: "تأسيس القراءة والكتابة (للأطفال)",
       image: literacyImg,

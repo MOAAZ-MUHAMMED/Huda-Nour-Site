@@ -7,7 +7,8 @@ import workshopsImg from "@/assets/generated_images/professional_male-only_train
 import campsImg from "@/assets/generated_images/camp_6.jpg";
 import testsImg from "@/assets/generated_images/modern_islamic_geometric_patterns_background.png";
 import celebrationsImg from "@/assets/generated_images/celebration_men_only.png";
-import arabicImg from "@/assets/generated_images/arabic_22.png";
+import arabicImg from "@/assets/generated_images/arabic123.png";
+import tebImg from "@/assets/generated_images/teb1.jpg";
 import programsImg from "@/assets/generated_images/quran_on_a_wooden_stand.png";
 import mathImg from "@/assets/generated_images/mathematics_education_background_with_geometric_shapes.png";
 import englishImg from "@/assets/generated_images/english_language_education_background_with_books_and_alphabets.png";
@@ -19,6 +20,12 @@ import teachingImg from "@/assets/attached_images/image_1769177021689.png";
 
 export default function Home() {
   const sections = [
+    {
+      title: "برنامج منهج التبيان",
+      image: tebImg,
+      href: "/programs/tebyan",
+      description: "إتقان القراءة والكتابة والحساب في شهرين فقط مع معلمين خبرة 30 عاماً."
+    },
     {
       title: "المعسكرات التعليمية",
       image: campsImg,

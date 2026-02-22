@@ -12,6 +12,7 @@ import Celebrations from "@/pages/Celebrations";
 import Programs from "@/pages/Programs";
 import ArabicProgram from "@/pages/ArabicProgram";
 import QuranProgram from "@/pages/QuranProgram";
+import TebyanProgram from "@/pages/TebyanProgram";
 import MathProgram from "@/pages/MathProgram";
 import EnglishProgram from "@/pages/EnglishProgram";
 import HistoryProgram from "@/pages/HistoryProgram";
@@ -38,6 +39,7 @@ function Router() {
         <Route path="/celebrations" component={Celebrations} />
         <Route path="/programs" component={Programs} />
         <Route path="/programs/arabic" component={ArabicProgram} />
+        <Route path="/programs/tebyan" component={TebyanProgram} />
         <Route path="/programs/quran" component={QuranProgram} />
         <Route path="/programs/math" component={MathProgram} />
         <Route path="/programs/english" component={EnglishProgram} />

@@ -22,16 +22,16 @@ export function AboutSection() {
                         viewport={{ once: true }}
                         className="lg:w-1/2 space-y-6 text-right"
                     >
-                        <h2 className="text-3xl md:text-4xl font-bold text-primary font-arabic leading-tight">
+                        <h2 className="text-4xl md:text-5xl font-bold text-primary font-sans leading-tight">
                             من نحن؟
-                            <span className="block text-xl md:text-2xl text-secondary mt-2">مؤسسة الهدى والنور التعليمية: ريادة في التأسيس وبناء القيم</span>
+                            <span className="block text-2xl md:text-3xl text-secondary mt-4 font-sans">مؤسسة الهدى والنور التعليمية: ريادة في التأسيس وبناء القيم</span>
                         </h2>
 
-                        <p className="text-lg leading-relaxed text-muted-foreground font-arabic">
+                        <p className="text-xl leading-relaxed text-muted-foreground font-sans">
                             نحن في **مؤسسة الهدى والنور التعليمية**، نعتبر أنفسنا شركاءكم في رحلة بناء عقول أبنائكم. بخبرة تمتد لأكثر من **30 عاماً** في الحقل التربوي، نقدم منظومة تعليمية متكاملة تجمع بين **تحفيظ القرآن الكريم** بأحكام التجويد، و**تأسيس اللغة العربية** للأطفال بمنهجية "التبيان" العالمية.
                         </p>
 
-                        <p className="text-lg leading-relaxed text-muted-foreground font-arabic">
+                        <p className="text-xl leading-relaxed text-muted-foreground font-sans">
                             تعتمد رؤيتنا على دمج الأساليب التربوية الأصيلة مع تقنيات **التعليم التفاعلي الحديثة**، لتشمل برامجنا تقوية الطلاب في **الرياضيات، الإنجليزية، والتاريخ**، بالإضافة إلى دوراتنا المتميزة في **تطوير المعلمين** ورفع كفاءة الكوادر التعليمية عبر "خارطة التميز للمعلم".
                         </p>
 
@@ -64,7 +64,7 @@ export function AboutSection() {
                         <div className="relative group">
                             <div className="absolute -inset-4 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-3xl blur-xl group-hover:blur-2xl transition duration-500"></div>
                             <div className="relative bg-white p-8 rounded-3xl shadow-2xl border border-primary/10 space-y-6">
-                                <h3 className="text-2xl font-bold text-primary font-arabic underline underline-offset-8 decoration-secondary">رسالتنا التعليمية</h3>
+                                <h3 className="text-3xl font-bold text-primary font-sans underline underline-offset-8 decoration-secondary">رسالتنا التعليمية</h3>
                                 <ul className="space-y-4">
                                     {[
                                         "توفير بيئة تعليمية آمنة ومحفزة للإبداع والتميز.",
@@ -76,7 +76,7 @@ export function AboutSection() {
                                             <div className="h-6 w-6 rounded-full bg-secondary/20 flex items-center justify-center shrink-0 mt-1">
                                                 <div className="h-2 w-2 rounded-full bg-secondary"></div>
                                             </div>
-                                            <span className="font-arabic leading-relaxed">{item}</span>
+                                            <span className="font-sans text-lg leading-relaxed">{item}</span>
                                         </li>
                                     ))}
                                 </ul>
