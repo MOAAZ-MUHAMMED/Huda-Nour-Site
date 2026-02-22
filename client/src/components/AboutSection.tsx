@@ -10,7 +10,7 @@ export function AboutSection() {
     ];
 
     return (
-        <section className="py-20 bg-primary/5 relative overflow-hidden">
+        <section className="pt-8 pb-20 bg-primary/5 relative overflow-hidden -mt-20">
             <div className="container px-4 mx-auto relative z-10">
                 <div className="flex flex-col lg:flex-row gap-12 items-center">
 
@@ -22,9 +22,9 @@ export function AboutSection() {
                         viewport={{ once: true }}
                         className="lg:w-1/2 space-y-6 text-right"
                     >
-                        <h2 className="text-4xl md:text-5xl font-bold text-primary font-sans leading-tight">
+                        <h2 className="text-3xl md:text-4xl font-bold text-primary font-sans leading-tight">
                             من نحن؟
-                            <span className="block text-2xl md:text-3xl text-secondary mt-4 font-sans">مؤسسة الهدى والنور التعليمية: ريادة في التأسيس وبناء القيم</span>
+                            <span className="block text-xl md:text-2xl text-secondary mt-4 font-sans">مؤسسة الهدى والنور التعليمية: ريادة في التأسيس وبناء القيم</span>
                         </h2>
 
                         <p className="text-xl leading-relaxed text-muted-foreground font-sans">
