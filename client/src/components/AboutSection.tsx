@@ -20,12 +20,12 @@ export function AboutSection() {
                     whileHover={{ scale: 1.05, rotate: 2 }}
                     transition={{ duration: 0.5 }}
                     viewport={{ once: true }}
-                    className="w-40 h-40 md:w-56 md:h-56 rounded-full border-4 border-secondary/40 overflow-hidden shadow-2xl bg-white mb-12"
+                    className="w-40 h-40 md:w-56 md:h-56 rounded-full border-4 border-secondary/40 overflow-hidden shadow-2xl bg-white mb-6"
                 >
                     <img src={logo} alt="Logo" className="w-full h-full object-cover" />
                 </motion.div>
 
-                <div className="flex flex-col lg:flex-row gap-12 items-center w-full">
+                <div className="flex flex-col lg:flex-row gap-8 items-center w-full">
 
                     {/* Text Content */}
                     <motion.div
