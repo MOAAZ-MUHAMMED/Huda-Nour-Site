@@ -23,13 +23,13 @@ export function AboutSection() {
                         viewport={{ once: true }}
                         className="lg:w-1/2 space-y-6 text-right"
                     >
-                        <div className="flex items-center gap-6 justify-end mb-4">
+                        <div className="flex items-center gap-8 justify-end mb-4 pr-4">
                             <h2 className="text-3xl md:text-5xl font-bold text-primary font-sans leading-tight">
                                 من نحن؟
                             </h2>
                             <motion.div
-                                whileHover={{ scale: 1.05, rotate: 2 }}
-                                className="w-24 h-24 md:w-32 md:h-32 rounded-2xl border-4 border-secondary/30 overflow-hidden shadow-2xl bg-white shrink-0"
+                                whileHover={{ scale: 1.1, rotate: 5 }}
+                                className="w-32 h-32 md:w-48 md:h-48 rounded-full border-4 border-secondary/40 overflow-hidden shadow-2xl bg-white shrink-0"
                             >
                                 <img src={logo} alt="Logo" className="w-full h-full object-cover" />
                             </motion.div>
