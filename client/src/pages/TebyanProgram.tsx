@@ -41,7 +41,7 @@ export default function TebyanProgram() {
                 <ul className="space-y-3 text-muted-foreground">
                   <li className="flex items-center gap-3">
                     <Clock className="w-4 h-4 text-secondary" />
-                    <span>تعليم القراءة والكتابة والحساب في شهرين فقط</span>
+                    <span>تعليم القراءة والكتابة والحساب في 3 شهور فقط</span>
                   </li>
                   <li className="flex items-center gap-3">
                     <Award className="w-4 h-4 text-secondary" />
@@ -93,7 +93,7 @@ export default function TebyanProgram() {
                 </li>
                 <li className="flex items-center gap-3 bg-primary/5 p-3 rounded-lg border border-transparent hover:border-primary/20 transition-colors">
                   <BookOpen className="w-5 h-5 text-primary" />
-                  <span>سرعة الإنجاز (شهرين فقط)</span>
+                  <span>سرعة الإنجاز (3 شهور فقط)</span>
                 </li>
                 <li className="flex items-center gap-3 bg-primary/5 p-3 rounded-lg border border-transparent hover:border-primary/20 transition-colors">
                   <BookOpen className="w-5 h-5 text-primary" />

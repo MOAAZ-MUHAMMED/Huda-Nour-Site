@@ -19,7 +19,7 @@ export default function Programs() {
       title: "برنامج منهج التبيان",
       image: tebImg,
       href: "/programs/tebyan",
-      description: "إتقان القراءة والكتابة والحساب في شهرين فقط مع معلمين خبرة 30 عاماً.",
+      description: "إتقان القراءة والكتابة والحساب في 3 شهور فقط مع معلمين خبرة 30 عاماً.",
       color: "border-secondary/50"
     },
     {
