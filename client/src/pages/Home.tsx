@@ -124,7 +124,7 @@ export default function Home() {
 
         <div className="container relative z-10 text-center px-4">
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 drop-shadow-xl font-arabic tracking-wide">
-            مؤسسة الهدى والنور
+            مؤسسة الهدى التعليمية
           </h1>
           <p className="text-xl md:text-2xl text-white/90 max-w-2xl mx-auto font-normal leading-relaxed font-sans">
             نسعى لبناء جيل واعٍ، متميز خلقاً وعلماً، من خلال بيئة تعليمية محفزة وكوادر مؤهلة

@@ -55,9 +55,15 @@ function Router() {
   );
 }
 
+import { useState } from "react";
+import { DoorIntro } from "@/components/DoorIntro";
+
 function App() {
+  const [showIntro, setShowIntro] = useState(true);
+
   return (
     <QueryClientProvider client={queryClient}>
+      {showIntro && <DoorIntro onComplete={() => setShowIntro(false)} />}
       <Toaster />
       <Router />
     </QueryClientProvider>

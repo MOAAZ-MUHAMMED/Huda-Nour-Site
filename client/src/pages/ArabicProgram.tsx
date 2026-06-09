@@ -21,7 +21,7 @@ export default function ArabicProgram() {
         <div className="absolute inset-0 bg-black/60 flex items-center justify-center">
           <div className="text-center p-4">
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 font-arabic">برنامج اللغة العربية</h1>
-            <p className="text-xl text-white/90">الهدى والنور أساس إتقان العربية</p>
+            <p className="text-xl text-white/90">الهدى التعليمية أساس إتقان العربية</p>
           </div>
         </div>
       </div>
@@ -31,7 +31,7 @@ export default function ArabicProgram() {
 
           <div className="flex flex-col md:flex-row gap-12 items-center">
             <div className="md:w-1/2 space-y-6">
-              <h2 className="text-3xl font-bold text-primary border-r-4 border-secondary pr-4 font-arabic">الهدى والنور أساس إتقان العربية</h2>
+              <h2 className="text-3xl font-bold text-primary border-r-4 border-secondary pr-4 font-arabic">الهدى التعليمية أساس إتقان العربية</h2>
               <p className="text-lg leading-relaxed text-muted-foreground">
                 منهج تعليمي متخصص صمم ليكون المرجع الأول في تأسيس اللغة العربية للأجيال، يجمع بين القواعد الأساسية والجماليات اللغوية لضمان إتقان القراءة والكتابة بأسلوب مبسط وشيق.
               </p>
@@ -57,7 +57,7 @@ export default function ArabicProgram() {
               </div>
             </div>
             <div className="md:w-1/2 rounded-2xl overflow-hidden shadow-2xl">
-              <img src={arabicBookImg} alt="الهدى والنور أساس إتقان العربية" className="w-full h-auto" />
+              <img src={arabicBookImg} alt="الهدى التعليمية أساس إتقان العربية" className="w-full h-auto" />
             </div>
           </div>
 

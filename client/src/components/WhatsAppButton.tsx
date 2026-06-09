@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 export function WhatsAppButton() {
   const phoneNumber = "201091044501";
-  const message = "السلام عليكم، أود الاستفسار عن برامج مؤسسة الهدى والنور";
+  const message = "السلام عليكم، أود الاستفسار عن برامج مؤسسة الهدى التعليمية";
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
   return (

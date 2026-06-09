@@ -38,7 +38,7 @@ export function Navbar() {
         <Link href="/">
           <div className="flex items-center gap-2 font-bold text-xl text-primary cursor-pointer">
             <BookOpen className="h-6 w-6" />
-            <span>مؤسسة الهدى والنور</span>
+            <span>مؤسسة الهدى التعليمية</span>
           </div>
         </Link>
 

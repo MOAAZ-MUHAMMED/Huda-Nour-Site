@@ -37,11 +37,11 @@ export function AboutSection() {
                     >
                         <h2 className="text-3xl md:text-5xl font-bold text-primary font-sans leading-tight">
                             من نحن؟
-                            <span className="block text-xl md:text-3xl text-secondary mt-4 font-sans">مؤسسة الهدى والنور التعليمية: ريادة في التأسيس وبناء القيم</span>
+                            <span className="block text-xl md:text-3xl text-secondary mt-4 font-sans">مؤسسة الهدى التعليمية: ريادة في التأسيس وبناء القيم</span>
                         </h2>
 
                         <p className="text-xl leading-relaxed text-muted-foreground font-sans">
-                            نحن في **مؤسسة الهدى والنور التعليمية**، نعتبر أنفسنا شركاءكم في رحلة بناء عقول أبنائكم. بخبرة تمتد لأكثر من **30 عاماً** في الحقل التربوي، نقدم منظومة تعليمية متكاملة تجمع بين **تحفيظ القرآن الكريم** بأحكام التجويد، و**تأسيس اللغة العربية** للأطفال بمنهجية "التبيان" العالمية.
+                            نحن في **مؤسسة الهدى التعليمية**، نعتبر أنفسنا شركاءكم في رحلة بناء عقول أبنائكم. بخبرة تمتد لأكثر من **30 عاماً** في الحقل التربوي، نقدم منظومة تعليمية متكاملة تجمع بين **تحفيظ القرآن الكريم** بأحكام التجويد، و**تأسيس اللغة العربية** للأطفال بمنهجية "التبيان" العالمية.
                         </p>
 
                         <p className="text-xl leading-relaxed text-muted-foreground font-sans">
