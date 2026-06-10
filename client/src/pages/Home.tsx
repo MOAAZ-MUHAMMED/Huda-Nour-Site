@@ -18,11 +18,8 @@ import germanImg from "@/assets/generated_images/german_language_promo.png";
 import booksSectionImg from "@/assets/generated_images/stack_of_educational_books_and_curricula.png";
 import teachingImg from "@/assets/attached_images/image_1769177021689.png";
 import { motion } from "framer-motion";
-import { useIntro } from "@/App";
 
 export default function Home() {
-  const { showIntro } = useIntro();
-  const baseDelay = showIntro ? 3.6 : 0;
 
   const sections = [
     {
@@ -114,9 +111,9 @@ export default function Home() {
   return (
     <div className="min-h-screen flex flex-col geometric-pattern">
       <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.5, delay: baseDelay }}
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1.0, ease: "easeOut" }}
       >
         <Navbar />
       </motion.div>
@@ -133,26 +130,32 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent" />
         </div>
 
-        <motion.div
-          initial={{ opacity: 0, scale: 0.95, y: 20 }}
-          animate={{ opacity: 1, scale: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: baseDelay + 0.2 }}
-          className="container relative z-10 text-center px-4"
-        >
-          <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 drop-shadow-xl font-arabic tracking-wide">
+        <div className="container relative z-10 text-center px-4">
+          <motion.h1
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1.2, delay: 0.3, ease: "easeOut" }}
+            className="text-5xl md:text-7xl font-bold text-white mb-6 drop-shadow-xl font-arabic tracking-wide"
+          >
             مؤسسة الهدى التعليمية
-          </h1>
-          <p className="text-xl md:text-2xl text-white/90 max-w-2xl mx-auto font-normal leading-relaxed font-sans">
+          </motion.h1>
+          <motion.p
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1.2, delay: 0.7, ease: "easeOut" }}
+            className="text-xl md:text-2xl text-white/90 max-w-2xl mx-auto font-normal leading-relaxed font-sans"
+          >
             نسعى لبناء جيل واعٍ، متميز خلقاً وعلماً، من خلال بيئة تعليمية محفزة وكوادر مؤهلة
-          </p>
-        </motion.div>
+          </motion.p>
+        </div>
       </section>
 
       {/* About Section */}
       <motion.div
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: baseDelay + 0.4 }}
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.2 }}
+        transition={{ duration: 1.0, ease: "easeOut" }}
       >
         <AboutSection />
       </motion.div>
@@ -160,9 +163,10 @@ export default function Home() {
       {/* Main Content Grid */}
       <main className="container px-4 md:px-6 py-16 relative z-20">
         <motion.h2
-          initial={{ opacity: 0, y: 15 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: baseDelay + 0.6 }}
+          initial={{ opacity: 0, y: 25 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1.0, ease: "easeOut" }}
           className="text-3xl font-bold text-primary text-center mb-12 font-arabic"
         >
           برامجنا وخدماتنا التعليمية
@@ -172,7 +176,7 @@ export default function Home() {
             <SectionCard
               key={section.title}
               {...section}
-              delay={baseDelay + 0.8 + index * 0.08}
+              delay={index * 0.1}
             />
           ))}
         </div>

@@ -14,9 +14,10 @@ interface SectionCardProps {
 export function SectionCard({ title, image, href, description, delay = 0 }: SectionCardProps) {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5, delay }}
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.1 }}
+      transition={{ duration: 0.8, delay, ease: "easeOut" }}
       className="h-full"
     >
       <Link href={href}>

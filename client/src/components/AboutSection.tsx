@@ -52,11 +52,11 @@ export function AboutSection() {
                             {stats.map((stat, index) => (
                                 <motion.div
                                     key={index}
-                                    initial={{ opacity: 0, y: 20 }}
-                                    whileInView={{ opacity: 1, y: 0 }}
-                                    transition={{ delay: index * 0.1 }}
+                                    initial={{ opacity: 0, y: 40, scale: 0.9 }}
+                                    whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                                    transition={{ duration: 0.7, delay: index * 0.15, ease: "easeOut" }}
                                     viewport={{ once: true }}
-                                    className="flex flex-col items-center p-4 bg-white rounded-2xl shadow-sm border border-primary/10"
+                                    className="flex flex-col items-center p-4 bg-white rounded-2xl shadow-sm border border-primary/10 hover:shadow-md hover:-translate-y-1 transition-all duration-300"
                                 >
                                     {stat.icon}
                                     <span className="mt-2 font-bold text-primary">{stat.value}</span>
@@ -85,12 +85,19 @@ export function AboutSection() {
                                         "بناء الشخصية القيادية المعتزة بهويتها وقيمها الإسلامية.",
                                         "استخدام أحدث الوسائل التقنية لضمان تجربة تعليمية ممتعة."
                                     ].map((item, i) => (
-                                        <li key={i} className="flex items-start gap-3 text-muted-foreground">
+                                        <motion.li
+                                            key={i}
+                                            initial={{ opacity: 0, x: 30 }}
+                                            whileInView={{ opacity: 1, x: 0 }}
+                                            transition={{ duration: 0.6, delay: i * 0.15, ease: "easeOut" }}
+                                            viewport={{ once: true }}
+                                            className="flex items-start gap-3 text-muted-foreground"
+                                        >
                                             <div className="h-6 w-6 rounded-full bg-secondary/20 flex items-center justify-center shrink-0 mt-1">
                                                 <div className="h-2 w-2 rounded-full bg-secondary"></div>
                                             </div>
                                             <span className="font-sans text-lg leading-relaxed">{item}</span>
-                                        </li>
+                                        </motion.li>
                                     ))}
                                 </ul>
                             </div>
