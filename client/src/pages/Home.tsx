@@ -17,8 +17,13 @@ import literacyImg from "@/assets/generated_images/arabic_literacy_foundation.pn
 import germanImg from "@/assets/generated_images/german_language_promo.png";
 import booksSectionImg from "@/assets/generated_images/stack_of_educational_books_and_curricula.png";
 import teachingImg from "@/assets/attached_images/image_1769177021689.png";
+import { motion } from "framer-motion";
+import { useIntro } from "@/App";
 
 export default function Home() {
+  const { showIntro } = useIntro();
+  const baseDelay = showIntro ? 3.6 : 0;
+
   const sections = [
     {
       title: "برنامج منهج التبيان",
@@ -108,7 +113,13 @@ export default function Home() {
 
   return (
     <div className="min-h-screen flex flex-col geometric-pattern">
-      <Navbar />
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5, delay: baseDelay }}
+      >
+        <Navbar />
+      </motion.div>
 
       {/* Hero Section */}
       <section className="relative h-[500px] flex items-center justify-center overflow-hidden">
@@ -122,28 +133,46 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent" />
         </div>
 
-        <div className="container relative z-10 text-center px-4">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.95, y: 20 }}
+          animate={{ opacity: 1, scale: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: baseDelay + 0.2 }}
+          className="container relative z-10 text-center px-4"
+        >
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 drop-shadow-xl font-arabic tracking-wide">
             مؤسسة الهدى التعليمية
           </h1>
           <p className="text-xl md:text-2xl text-white/90 max-w-2xl mx-auto font-normal leading-relaxed font-sans">
             نسعى لبناء جيل واعٍ، متميز خلقاً وعلماً، من خلال بيئة تعليمية محفزة وكوادر مؤهلة
           </p>
-        </div>
+        </motion.div>
       </section>
 
       {/* About Section */}
-      <AboutSection />
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: baseDelay + 0.4 }}
+      >
+        <AboutSection />
+      </motion.div>
 
       {/* Main Content Grid */}
       <main className="container px-4 md:px-6 py-16 relative z-20">
-        <h2 className="text-3xl font-bold text-primary text-center mb-12 font-arabic">برامجنا وخدماتنا التعليمية</h2>
+        <motion.h2
+          initial={{ opacity: 0, y: 15 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: baseDelay + 0.6 }}
+          className="text-3xl font-bold text-primary text-center mb-12 font-arabic"
+        >
+          برامجنا وخدماتنا التعليمية
+        </motion.h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {sections.map((section, index) => (
             <SectionCard
               key={section.title}
               {...section}
-              delay={index * 0.1}
+              delay={baseDelay + 0.8 + index * 0.08}
             />
           ))}
         </div>

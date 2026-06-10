@@ -55,17 +55,23 @@ function Router() {
   );
 }
 
-import { useState } from "react";
+import { useState, createContext, useContext } from "react";
 import { DoorIntro } from "@/components/DoorIntro";
+
+// Create context to share intro state with pages
+const IntroContext = createContext({ showIntro: true });
+export const useIntro = () => useContext(IntroContext);
 
 function App() {
   const [showIntro, setShowIntro] = useState(true);
 
   return (
     <QueryClientProvider client={queryClient}>
-      {showIntro && <DoorIntro onComplete={() => setShowIntro(false)} />}
-      <Toaster />
-      <Router />
+      <IntroContext.Provider value={{ showIntro }}>
+        {showIntro && <DoorIntro onComplete={() => setShowIntro(false)} />}
+        <Toaster />
+        <Router />
+      </IntroContext.Provider>
     </QueryClientProvider>
   );
 }
